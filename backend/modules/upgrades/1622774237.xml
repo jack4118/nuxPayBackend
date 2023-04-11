@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `xun_crypto_payment_request` ( `id` BIGINT(20) NOT NULL AUTO_INCREMENT , `transaction_token` VARCHAR(255) NOT NULL , `payment_tx_id` BIGINT(20) NOT NULL , `business_id` BIGINT(20) NOT NULL , `crypto_amount` DECIMAL(20,8) NOT NULL , `wallet_type` VARCHAR(255) NOT NULL , `fiat_amount` DECIMAL(20,8) NOT NULL , `fiat_currency` VARCHAR(255) NOT NULL , `destination_address` VARCHAR(255) NOT NULL , `type` VARCHAR(255) NOT NULL , `status` VARCHAR(255) NOT NULL , `provider_id` BIGINT(20) NOT NULL , `created_at` DATETIME NOT NULL , `updated_at` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+    </query>
+    <query>
+        ALTER TABLE `xun_crypto_payment_request` ADD UNIQUE `uniq_transaction_token` (`id`);
+    </query>
+</document>

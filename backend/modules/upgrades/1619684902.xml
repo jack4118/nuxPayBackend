@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minAmount', '{ "USD": "50", "EUR": "42", "HKD": "389", "IDR": "722980", "JPY": "5431", "KRW": "55396", "MYR": "206", "PHP": "2421", "SGD": "67", "TWD" : "1392", "VND" : "1152750", "CAD" : "62", "NZD" : "69", "AUD" : "65", "AED" : "184" }', 'USDT', (SELECT id FROM provider where name = 'Simplex'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minAmount', '{ "USD": "50", "EUR": "42", "HKD": "389", "IDR": "722980", "JPY": "5431", "KRW": "55396", "MYR": "206", "PHP": "2421", "SGD": "67", "TWD" : "1392", "VND" : "1152750", "CAD" : "62", "NZD" : "69", "AUD" : "65", "AED" : "184" }', 'BTC', (SELECT id FROM provider where name = 'Simplex'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minAmount', '{ "USD": "50", "EUR": "42", "HKD": "389", "IDR": "722980", "JPY": "5431", "KRW": "55396", "MYR": "206", "PHP": "2421", "SGD": "67", "TWD" : "1392", "VND" : "1152750", "CAD" : "62", "NZD" : "69", "AUD" : "65", "AED" : "184" }', 'ETH', (SELECT id FROM provider where name = 'Simplex'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minAmount', '{ "USD": "50", "EUR": "42", "HKD": "389", "IDR": "722980", "JPY": "5431", "KRW": "55396", "MYR": "206", "PHP": "2421", "SGD": "67", "TWD" : "1392", "VND" : "1152750", "CAD" : "62", "NZD" : "69", "AUD" : "65", "AED" : "184" }', 'BCH', (SELECT id FROM provider where name = 'Simplex'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minAmount', '{ "USD": "50", "EUR": "42", "HKD": "389", "IDR": "722980", "JPY": "5431", "KRW": "55396", "MYR": "206", "PHP": "2421", "SGD": "67", "TWD" : "1392", "VND" : "1152750", "CAD" : "62", "NZD" : "69", "AUD" : "65", "AED" : "184" }', 'LTC', (SELECT id FROM provider where name = 'Simplex'), NOW(), NOW())
+    </query>
+</document>

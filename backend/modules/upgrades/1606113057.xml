@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_payment_transaction` ADD COLUMN `gw_type` varchar(255) NOT NULL AFTER `crypto_history_id`;
+    </query>
+    <query>
+    	ALTER TABLE `xun_payment_gateway_invoice_detail` ADD COLUMN `gw_type` varchar(255) NOT NULL AFTER `status`;
+    </query>
+    <query>
+    	ALTER TABLE `xun_crypto_history` ADD COLUMN `gw_type` varchar(255) NOT NULL AFTER `withdrawal_id`;
+    </query>
+    <query>
+    	ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD COLUMN `gw_type` varchar(255) NOT NULL AFTER `reference_id`;
+    </query>
+    <query>
+    	ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD COLUMN `transaction_hash` varchar(255) NOT NULL AFTER `gw_type`;
+    </query>
+</document>

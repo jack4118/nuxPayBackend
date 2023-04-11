@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'AED', 'currency', 'aed', 'aed', 'aed', '', '1.00000000', '0', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/AED%403x.png', '0', '1', 'f2ecefc0863410ca948831c6c1648965', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'GBP', 'currency', 'gbp', 'gbp', 'gap', '', '1.00000000', '0', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/GBP%403x.png', '0', '1', '52a37193541de694f8f194bcd01ccc6b', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'TWD', 'currenccy', 'twd', 'two', 'two', '', '1.00000000', '0', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/TWD%403x.png', '0', '1', '2d86462758ed218a45b304c695ffa1dd', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'NZD', 'currency', 'nzd', 'nzd', 'nod', '', '1.00000000', '0', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/NZD%403x.png', '0', '1', 'af148232fc342c407b370106edb6d024', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'AUD', 'currency', 'aud', 'aud', 'aud', '', '1.00000000', '0', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/AUD%403x.png', '0', '1', 'b3dc12e0571be4364095c4fc1c4b0cb7', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'VND', 'currency', 'vnd', 'vnd', 'vnd', '', '1.00000000', '0', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/VND%403x.png', '0', '1', 'd9408c9ce50f51bda3debcf60b048dcf', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'INR', 'currency', 'inr', 'inr', 'ini', '', '1.00000000', '0', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/INR%403x.png', '0', '1', 'b90844e171b1679e96851b615026aeb0', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+    
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'CAD', 'currency', 'cad', 'cad', 'cad', '', '1.00000000', '0', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/CAD%403x.png', '0', '1', '3172463c7436c5ad5016afc8ff7114c3', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+</document>

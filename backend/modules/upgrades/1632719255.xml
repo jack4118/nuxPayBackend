@@ -1,0 +1,545 @@
+<?xml version="1.0" ?>
+<document type="TABLE">	
+
+    <!-- USD2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'usd2', 'USD2', 'bitcoin', 'BTC', 'BTCUSD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'usd2', 'USD2', 'BTCUSD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'usd2', 'USD2', 'ethereum', 'ETH', 'ETHUSD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'usd2', 'USD2', 'ETHUSD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'usd2', 'USD2', 'myr2', 'MYR2', 'USD2MYR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'usd2', 'USD2', 'sgd2', 'SGD2', 'USD2SGD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'usd2', 'USD2', 'hkd2', 'HKD2', 'USD2HKD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'usd2', 'USD2', 'rmb2', 'RMB2', 'USD2RMB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'usd2', 'USD2', 'eur2', 'EUR2', 'USD2EUR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'usd2', 'USD2', 'won2', 'WON2', 'USD2WON2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'usd2', 'USD2', 'yen2', 'YEN2', 'USD2YEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'usd2', 'USD2', 'thb2', 'THB2', 'USD2THB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'usd2', 'USD2', 'php2', 'PHP2', 'USD2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- MYR2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'myr2', 'MYR2', 'bitcoin', 'BTC', 'BTCMYR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'myr2', 'MYR2', 'BTCMYR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'myr2', 'MYR2', 'ethereum', 'ETH', 'ETHMYR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'myr2', 'MYR2', 'ETHMYR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'myr2', 'MYR2', 'usd2', 'USD2', 'USD2MYR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'myr2', 'MYR2', 'sgd2', 'SGD2', 'MYR2SGD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'myr2', 'MYR2', 'hkd2', 'HKD2', 'MYR2HKD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'myr2', 'MYR2', 'rmb2', 'RMB2', 'MYR2RMB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'myr2', 'MYR2', 'eur2', 'EUR2', 'MYR2EUR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'myr2', 'MYR2', 'won2', 'WON2', 'MYR2WON2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'myr2', 'MYR2', 'yen2', 'YEN2', 'MYR2YEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'myr2', 'MYR2', 'thb2', 'THB2', 'MYR2THB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'myr2', 'MYR2', 'php2', 'PHP2', 'MYR2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- SGD2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'sgd2', 'SGD2', 'bitcoin', 'BTC', 'BTCSGD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'sgd2', 'SGD2', 'BTCSGD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'sgd2', 'SGD2', 'ethereum', 'ETH', 'ETHSGD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'sgd2', 'SGD2', 'ETHSGD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'sgd2', 'SGD2', 'usd2', 'USD2', 'USD2SGD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'sgd2', 'SGD2', 'myr2', 'MYR2', 'MYR2SGD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'sgd2', 'SGD2', 'hkd2', 'HKD2', 'SGD2HKD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'sgd2', 'SGD2', 'rmb2', 'RMB2', 'SGD2RMB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'sgd2', 'SGD2', 'eur2', 'EUR2', 'SGD2EUR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'sgd2', 'SGD2', 'won2', 'WON2', 'SGD2WON2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'sgd2', 'SGD2', 'yen2', 'YEN2', 'SGD2YEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'sgd2', 'SGD2', 'thb2', 'THB2', 'SGD2THB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'sgd2', 'SGD2', 'php2', 'PHP2', 'SGD2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- HKD2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'hkd2', 'HKD2', 'bitcoin', 'BTC', 'BTCHKD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'hkd2', 'HKD2', 'BTCHKD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'hkd2', 'HKD2', 'ethereum', 'ETH', 'ETHHKD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'hkd2', 'HKD2', 'ETHHKD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'hkd2', 'HKD2', 'usd2', 'USD2', 'USD2HKD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'hkd2', 'HKD2', 'myr2', 'MYR2', 'MYR2HKD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'hkd2', 'HKD2', 'sgd2', 'SGD2', 'SGD2HKD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'hkd2', 'HKD2', 'rmb2', 'RMB2', 'RMB2HKD2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'hkd2', 'HKD2', 'eur2', 'EUR2', 'HKD2EUR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'hdk2', 'HKD2', 'won2', 'WON2', 'HKD2WON2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'hkd2', 'HKD2', 'yen2', 'YEN2', 'HKD2YEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'hkd2', 'HKD2', 'thb2', 'THB2', 'HKD2THB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'hkd2', 'HKD2', 'php2', 'PHP2', 'HKD2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- RMB2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'rmb2', 'RMB2', 'bitcoin', 'BTC', 'BTCRMB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'rmb2', 'RMB2', 'BTCRMB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'rmb2', 'RMB2', 'ethereum', 'ETH', 'ETHRMB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'rmb2', 'RMB2', 'ETHRMB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'rmb2', 'RMB2', 'usd2', 'USD2', 'USD2RMB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'rmb2', 'RMB2', 'myr2', 'MYR2', 'MYR2RMB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'rmb2', 'RMB2', 'sgd2', 'SGD2', 'SGD2RMB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'rmb2', 'RMB2', 'hkd2', 'HKD2', 'RMB2HKD2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'rmb2', 'RMB2', 'eur2', 'EUR2', 'RMB2EUR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'rmb2', 'RMB2', 'won2', 'WON2', 'RMB2WON2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'rmb2', 'RMB2', 'yen2', 'YEN2', 'RMB2YEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'rmb2', 'RMB2', 'thb2', 'THB2', 'RMB2THB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'rmb2', 'RMB2', 'php2', 'PHP2', 'RMB2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- EUR2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'eur2', 'EUR2', 'bitcoin', 'BTC', 'BTCEUR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'eur2', 'EUR2', 'BTCEUR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'eur2', 'EUR2', 'ethereum', 'ETH', 'ETHEUR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'eur2', 'EUR2', 'ETHEUR2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'eur2', 'EUR2', 'usd2', 'USD2', 'USD2EUR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'eur2', 'EUR2', 'myr2', 'MYR2', 'MYR2EUR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'eur2', 'EUR2', 'sgd2', 'SGD2', 'SGD2EUR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'eur2', 'EUR2', 'hkd2', 'HKD2', 'HKD2EUR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'eur2', 'EUR2', 'rmb2', 'RMB2', 'RMB2EUR2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'eur2', 'EUR2', 'won2', 'WON2', 'EUR2WON2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'eur2', 'EUR2', 'yen2', 'YEN2', 'EUR2YEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'eur2', 'EUR2', 'thb2', 'THB2', 'EUR2THB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'eur2', 'EUR2', 'php2', 'PHP2', 'EUR2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- WON2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'won2', 'WON2', 'bitcoin', 'BTC', 'BTCWON2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'won2', 'WON2', 'BTCWON2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'won2', 'WON2', 'ethereum', 'ETH', 'ETHWON2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'won2', 'WON2', 'ETHWON2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'won2', 'WON2', 'usd2', 'USD2', 'USD2WON2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'won2', 'WON2', 'myr2', 'MYR2', 'MYR2WON2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'won2', 'WON2', 'sgd2', 'SGD2', 'SGD2WON2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'won2', 'WON2', 'hkd2', 'HKD2', 'HKD2WON2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'won2', 'WON2', 'rmb2', 'RMB2', 'RMB2WON2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'won2', 'WON2', 'eur2', 'EUR2', 'EUR2WON2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'won2', 'WON2', 'yen2', 'YEN2', 'WON2YEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'won2', 'WON2', 'thb2', 'THB2', 'WON2THB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'won2', 'WON2', 'php2', 'PHP2', 'WON2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- YEN2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'yen2', 'YEN2', 'bitcoin', 'BTC', 'BTCYEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'yen2', 'YEN2', 'BTCYEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'yen2', 'YEN2', 'ethereum', 'ETH', 'ETHYEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'yen2', 'YEN2', 'ETHYEN2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'yen2', 'YEN2', 'usd2', 'USD2', 'USD2YEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'yen2', 'YEN2', 'myr2', 'MYR2', 'MYR2YEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'yen2', 'YEN2', 'sgd2', 'SGD2', 'SGD2YEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'yen2', 'YEN2', 'hkd2', 'HKD2', 'HKD2YEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'yen2', 'YEN2', 'rmb2', 'RMB2', 'RMB2YEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'yen2', 'YEN2', 'eur2', 'EUR2', 'EUR2YEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'yen2', 'YEN2', 'won2', 'WON2', 'WON2YEN2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'yen2', 'YEN2', 'thb2', 'THB2', 'YEN2THB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'yen2', 'YEN2', 'php2', 'PHP2', 'YEN2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- THB2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'thb2', 'THB2', 'bitcoin', 'BTC', 'BTCTHB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'thb2', 'THB2', 'BTCTHB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'thb2', 'THB2', 'ethereum', 'ETH', 'ETHTHB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'thb2', 'THB2', 'ETHTHB2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'thb2', 'THB2', 'usd2', 'USD2', 'USD2THB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'thb2', 'THB2', 'myr2', 'MYR2', 'MYR2THB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'thb2', 'THB2', 'sgd2', 'SGD2', 'SGD2THB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'thb2', 'THB2', 'hkd2', 'HKD2', 'HKD2THB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'thb2', 'THB2', 'rmb2', 'RMB2', 'RMB2THB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'thb2', 'THB2', 'eur2', 'EUR2', 'EUR2THB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'thb2', 'THB2', 'won2', 'WON2', 'WON2THB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'thb2', 'THB2', 'yen2', 'YEN2', 'YEN2THB2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'thb2', 'THB2', 'php2', 'PHP2', 'THB2PHP2', 'sell', '5.00', '0' );
+    </query>  
+
+    <!-- PHP2 -->
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'php2', 'PHP2', 'bitcoin', 'BTC', 'BTCPHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'bitcoin', 'BTC', 'php2', 'PHP2', 'BTCPHP2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'php2', 'PHP2', 'ethereum', 'ETH', 'ETHPHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'ethereum', 'ETH', 'php2', 'PHP2', 'ETHPHP2', 'sell', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) 
+        VALUES ( 'php2', 'PHP2', 'usd2', 'USD2', 'USD2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'php2', 'PHP2', 'myr2', 'MYR2', 'MYR2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'php2', 'PHP2', 'sgd2', 'SGD2', 'SGD2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'php2', 'PHP2', 'hkd2', 'HKD2', 'HKD2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'php2', 'PHP2', 'rmb2', 'RMB2', 'RMB2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'php2', 'PHP2', 'eur2', 'EUR2', 'EUR2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'php2', 'PHP2', 'won2', 'WON2', 'WON2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'php2', 'PHP2', 'yen2', 'YEN2', 'YEN2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    <query>
+        INSERT INTO `xun_swap_setting` (`from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`)
+        VALUES ( 'php2', 'PHP2', 'thb2', 'THB2', 'THB2PHP2', 'buy', '5.00', '0' );
+    </query>  
+    
+
+</document>

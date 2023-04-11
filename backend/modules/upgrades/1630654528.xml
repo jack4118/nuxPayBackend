@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        SELECT @provider_id := `id` FROM `provider` WHERE `company` = 'Simplex';
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`,`value`,`type`,`provider_id`,`created_at`,`updated_at`) VALUES ('minAmount', '50', 'FIL', @provider_id,NOW(),NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`,`value`,`type`,`provider_id`,`created_at`,`updated_at`) VALUES ('maxAmount', '20000', 'FIL', @provider_id,NOW(),NOW());
+    </query>
+</document>

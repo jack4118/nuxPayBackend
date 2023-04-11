@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    
+    <!--  xun_payment_gateway_fund_in, add column escrow_id  -->
+    <query>
+        ALTER TABLE `xun_payment_gateway_fund_in` 
+        ADD COLUMN `escrow_id` BIGINT(20) NOT NULL AFTER `transaction_type`;
+    </query>    
+
+    <!--  xun_payment_gateway_fund_in, add index escrow_id  -->    
+     <query>
+    	ALTER TABLE `xun_payment_gateway_fund_in` 
+        ADD INDEX `escrow_id` (`escrow_id`);
+    </query>
+
+
+</document>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_withdrawal` ADD `transaction_type` VARCHAR(255) NOT NULL AFTER `status`;
+    </query>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `graph_data_1m` (
+            `id`                    BIGINT(20)          NOT NULL AUTO_INCREMENT,
+            `common_symbol`         VARCHAR(255)        NOT NULL,
+            `high`                  DECIMAL(27,10)		NOT NULL,
+            `low`                   DECIMAL(27,10)		NOT NULL,
+            `open`                  DECIMAL(27,10)		NOT NULL,
+            `close`                 DECIMAL(27,10)		NOT NULL,
+            `volume`               DECIMAL(27,10)		NOT NULL,
+            `amount`                DECIMAL(27,10)		NOT NULL,
+            `change`                DECIMAL(27,10)		NOT NULL,
+            `created_at`            DATETIME		NOT NULL,
+            PRIMARY KEY (`id`),
+            KEY `common_symbol` (`common_symbol`),
+            UNIQUE KEY `symbol_created_at` (`common_symbol`,`created_at`),
+            KEY `created_at` (`created_at`)
+        ) ENGINE=InnoDB;
+    </query>
+
+    <query>
+        CREATE TABLE `graph_data_5m` (
+            `id`                    BIGINT(20)          NOT NULL AUTO_INCREMENT,
+            `common_symbol`         VARCHAR(255)        NOT NULL,
+            `high`                  DECIMAL(27,10)		NOT NULL,
+            `low`                   DECIMAL(27,10)		NOT NULL,
+            `open`                  DECIMAL(27,10)		NOT NULL,
+            `close`                 DECIMAL(27,10)		NOT NULL,
+            `volume`               DECIMAL(27,10)		NOT NULL,
+            `amount`                DECIMAL(27,10)		NOT NULL,
+            `change`                DECIMAL(27,10)		NOT NULL,
+            `created_at`            DATETIME		NOT NULL,
+            PRIMARY KEY (`id`),
+            KEY `common_symbol` (`common_symbol`),
+            UNIQUE KEY `symbol_created_at` (`common_symbol`,`created_at`),
+            KEY `created_at` (`created_at`)
+        ) ENGINE=InnoDB;
+    </query>
+
+    <query>
+        CREATE TABLE `graph_data_1h` (
+            `id`                    BIGINT(20)          NOT NULL AUTO_INCREMENT,
+            `common_symbol`         VARCHAR(255)        NOT NULL,
+            `high`                  DECIMAL(27,10)		NOT NULL,
+            `low`                   DECIMAL(27,10)		NOT NULL,
+            `open`                  DECIMAL(27,10)		NOT NULL,
+            `close`                 DECIMAL(27,10)		NOT NULL,
+            `volume`               DECIMAL(27,10)		NOT NULL,
+            `amount`                DECIMAL(27,10)		NOT NULL,
+            `change`                DECIMAL(27,10)		NOT NULL,
+            `created_at`            DATETIME		NOT NULL,
+            PRIMARY KEY (`id`),
+            KEY `common_symbol` (`common_symbol`),
+            UNIQUE KEY `symbol_created_at` (`common_symbol`,`created_at`),
+            KEY `created_at` (`created_at`)
+        ) ENGINE=InnoDB;
+    </query>
+
+    <query>
+        CREATE TABLE `graph_data_1d` (
+            `id`                    BIGINT(20)          NOT NULL AUTO_INCREMENT,
+            `common_symbol`         VARCHAR(255)        NOT NULL,
+            `high`                  DECIMAL(27,10)		NOT NULL,
+            `low`                   DECIMAL(27,10)		NOT NULL,
+            `open`                  DECIMAL(27,10)		NOT NULL,
+            `close`                 DECIMAL(27,10)		NOT NULL,
+            `volume`               DECIMAL(27,10)		NOT NULL,
+            `amount`                DECIMAL(27,10)		NOT NULL,
+            `change`                DECIMAL(27,10)		NOT NULL,
+            `created_at`            DATETIME		NOT NULL,
+            PRIMARY KEY (`id`),
+            KEY `common_symbol` (`common_symbol`),
+            UNIQUE KEY `symbol_created_at` (`common_symbol`,`created_at`),
+            KEY `created_at` (`created_at`)
+        ) ENGINE=InnoDB;
+    </query>
+
+    <query>
+        CREATE TABLE `graph_data_1w` (
+            `id`                    BIGINT(20)          NOT NULL AUTO_INCREMENT,
+            `common_symbol`         VARCHAR(255)        NOT NULL,
+            `high`                  DECIMAL(27,10)		NOT NULL,
+            `low`                   DECIMAL(27,10)		NOT NULL,
+            `open`                  DECIMAL(27,10)		NOT NULL,
+            `close`                 DECIMAL(27,10)		NOT NULL,
+            `volume`               DECIMAL(27,10)		NOT NULL,
+            `amount`                DECIMAL(27,10)		NOT NULL,
+            `change`                DECIMAL(27,10)		NOT NULL,
+            `created_at`            DATETIME		NOT NULL,
+            PRIMARY KEY (`id`),
+            KEY `common_symbol` (`common_symbol`),
+            UNIQUE KEY `symbol_created_at` (`common_symbol`,`created_at`),
+            KEY `created_at` (`created_at`)
+        ) ENGINE=InnoDB;
+    </query>
+
+    <query>
+        CREATE TABLE `graph_data_1mt` (
+            `id`                    BIGINT(20)          NOT NULL AUTO_INCREMENT,
+            `common_symbol`         VARCHAR(255)        NOT NULL,
+            `high`                  DECIMAL(27,10)		NOT NULL,
+            `low`                   DECIMAL(27,10)		NOT NULL,
+            `open`                  DECIMAL(27,10)		NOT NULL,
+            `close`                 DECIMAL(27,10)		NOT NULL,
+            `volume`               DECIMAL(27,10)		NOT NULL,
+            `amount`                DECIMAL(27,10)		NOT NULL,
+            `change`                DECIMAL(27,10)		NOT NULL,
+            `created_at`            DATETIME		NOT NULL,
+            PRIMARY KEY (`id`),
+            KEY `common_symbol` (`common_symbol`),
+            UNIQUE KEY `symbol_created_at` (`common_symbol`,`created_at`),
+            KEY `created_at` (`created_at`)
+        ) ENGINE=InnoDB;
+    </query>
+     
+</document>

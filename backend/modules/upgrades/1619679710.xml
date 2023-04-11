@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `xun_marketplace_currencies` SET `image` = 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/currency/IDR%403x.png', `status` = '1', `image_md5` = '93b8c9eddb0a90f0f3555c5ee97448b9' WHERE `xun_marketplace_currencies`.`name` = 'IDR';
+    </query>
+</document>

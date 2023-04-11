@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapUSDT', '20', 'BTCUSDT', (SELECT id FROM provider WHERE username='binance'), NOW(), NOW()), ('minSwapBTC', '0.0005', 'BTCUSDT', (SELECT id FROM provider WHERE username='binance'), NOW(), NOW());
+    </query>
+    <query>
+    	INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapUSDT', '20', 'ETHUSDT', (SELECT id FROM provider WHERE username='binance'), NOW(), NOW()), ('minSwapETH', '0.01', 'ETHUSDT', (SELECT id FROM provider WHERE username='binance'), NOW(), NOW());
+    </query>
+    <query>
+    	INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapBTC', '0.0005', 'ETHBTC', (SELECT id FROM provider WHERE username='binance'), NOW(), NOW()), ('minSwapETH', '0.01', 'ETHBTC', (SELECT id FROM provider WHERE username='binance'), NOW(), NOW());
+    </query>
+</document>

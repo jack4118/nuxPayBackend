@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `xun_payment_gateway_send_fund` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `business_id` bigint(20) NOT NULL,
+        `recipient_name` varchar(255) NOT NULL,
+        `recipient_mobile_number` varchar(255) NOT NULL,
+        `recipient_email_address` varchar(255) NOT NULL,
+        `amount` decimal(20,8) NOT NULL,
+        `wallet_type` varchar(255) NOT NULL,
+        `status` varchar(255) NOT NULL,
+        `tx_type` varchar(255) NOT NULL,
+        `redeem_code` varchar(255) NOT NULL,
+        `redeemed_by` varchar(255) NOT NULL,
+        `redeemed_at` datetime NOT NULL,
+        `created_at` datetime NOT NULL,
+        `updated_at` datetime NOT NULL,
+        PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_send_fund` ADD `description` VARCHAR(255) NOT NULL AFTER `wallet_type`; 
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_send_fund` ADD INDEX `business_id` (`business_id`);
+    </query>
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'redeemCodeAgentAddress', '0xb3091b3450dc97925dde2d232a4aa9b3e6bc729d', '', '', 'NuxPay Redeem Code Agent Address', 'NuxPay');
+    </query>
+
+</document>

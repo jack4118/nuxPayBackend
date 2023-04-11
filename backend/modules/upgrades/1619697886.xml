@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxAmount', '20000', 'BTC', (SELECT id FROM provider where name = 'simplex'), NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxAmount', '20000', 'USDT', (SELECT id FROM provider where name = 'simplex'), NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxAmount', '20000', 'ETH', (SELECT id FROM provider where name = 'simplex'), NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxAmount', '20000', 'LTC', (SELECT id FROM provider where name = 'simplex'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxAmount', '20000', 'BCH', (SELECT id FROM provider where name = 'simplex'), NOW(), NOW())
+    </query>
+    <query>
+        UPDATE provider_setting set value = "50" where name = 'minAmount' and provider_id = (SELECT id FROM provider where name = 'Simplex')
+    </query>
+</document>

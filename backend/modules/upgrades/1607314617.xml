@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_fund_out_details` ADD `gateway_type` VARCHAR(255) NOT NULL AFTER `bc_reference_id`;
+    </query>
+     <query>
+        UPDATE xun_crypto_fund_out_details set gateway_type = 'BC';
+     </query>
+</document>

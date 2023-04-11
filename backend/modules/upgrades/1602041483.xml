@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `site` ADD COLUMN `company_name` VARCHAR(255) NOT NULL DEFAULT '' AFTER `source`;
+    </query>
+    <query>
+        ALTER TABLE `site` ADD COLUMN `company_address` VARCHAR(255) NOT NULL DEFAULT '' AFTER `company_name`;
+    </query>
+    <query>
+        ALTER TABLE `site` ADD COLUMN `support_email` VARCHAR(255) NOT NULL DEFAULT '' AFTER `company_address`;
+    </query>
+    <query>
+        UPDATE `site` SET company_name='NuxPay', company_address='2603 Camino Ramon Suite 200
+San Ramon, CA 94583 USA', support_email='support@nuxpay.com' WHERE `source`='NuxPay';
+    </query>
+    <query>
+        UPDATE `site` SET company_name='PPay', company_address='', support_email='support@ppay99.com' WHERE `source`='PPay';
+    </query>
+    <query>
+        UPDATE `site` SET company_name='GemDirectPay', company_address='', support_email='support@gemdirectpay.com' WHERE `source`='GemDirectPay';
+    </query>
+
+</document>
+

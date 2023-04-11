@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE xun_crypto_payment_transaction ADD auto_selling VARCHAR(255) NOT NULL AFTER type
+    </query>
+</document>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_swap_history` 
+        ADD COLUMN `transaction_token` VARCHAR(255) NOT NULL
+        AFTER `to_tx_id`;
+    </query>
+
+</document>

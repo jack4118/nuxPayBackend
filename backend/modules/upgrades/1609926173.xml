@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'buySellAdsMaxDailyLimit', '3', '', '', 'Maximun daily buy sell ads limit', 'NuxPay');
+    </query>
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'buySellAdsDuration', '4320', '', '', 'Expire in minute', 'NuxPay');
+    </query>
+     
+</document>

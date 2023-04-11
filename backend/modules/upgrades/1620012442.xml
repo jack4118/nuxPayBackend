@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'isEnabled', '1', '', (SELECT id FROM provider where name = 'simplex'), NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'isEnabled', '1', '', (SELECT id FROM provider where name = 'xanpool'), NOW(), NOW());
+    </query>
+</document>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_fund_out_details` ADD `exchange_order_id` BIGINT(20) NOT NULL AFTER `bc_reference_id`, ADD `order_processed` TINYINT NOT NULL AFTER `exchange_order_id`; 
+    </query>
+    <query>
+        ALTER TABLE `xun_crypto_fund_out_details` ADD `exchange_rate` DECIMAL(20,8) NOT NULL AFTER `pool_tx_hash`, ADD `miner_fee_exchange_rate` DECIMAL(20,8) NOT NULL AFTER `exchange_rate`;
+    </query>
+    <query>
+        UPDATE xun_crypto_fund_out_details set order_processed = 1;
+    </query>
+</document>

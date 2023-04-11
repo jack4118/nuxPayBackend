@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD `processed` TINYINT NOT NULL AFTER `transaction_hash`;
+    </query>
+    <query>
+        ALTER TABLE  `xun_payment_gateway_invoice_transaction` ADD INDEX `processed` (`processed`);
+    </query>
+    <query>
+        UPDATE xun_payment_gateway_invoice_transaction set processed = 1 where transaction_type in ('withhold' , 'release_withhold');
+    </query>
+        
+</document>

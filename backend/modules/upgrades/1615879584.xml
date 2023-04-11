@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_acc_closing` CHANGE `user_id` `user_id` VARCHAR(255) NOT NULL;
+    </query>
+</document>

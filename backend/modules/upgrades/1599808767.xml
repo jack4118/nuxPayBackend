@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+	<query>
+		UPDATE permissions SET name = 'Register Merchant' WHERE name = 'Create Nuxpay User';
+	</query>
+</document>

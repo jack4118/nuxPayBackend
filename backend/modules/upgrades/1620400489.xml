@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE xun_marketplace_currencies set image = 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/cryptocurrency/filecoin.png' where currency_id = 'filecoin'
+    </query>
+</document>

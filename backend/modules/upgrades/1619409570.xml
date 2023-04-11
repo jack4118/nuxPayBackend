@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `xun_crypto_payment_transaction` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `business_id` bigint(20) NOT NULL,
+        `payment_amount` decimal(20,8) NOT NULL,
+        `payment_currency` varchar(255) NOT NULL,
+        `crypto_amount` decimal(20,8) NOT NULL,
+        `wallet_type` varchar(255) NOT NULL,
+        `quote_id` varchar(255) NOT NULL,
+        `payment_id` varchar(255) NOT NULL,
+        `type` varchar(255) NOT NULL,
+        `status` varchar(255) NOT NULL,
+        `provider_id` bigint(20) NOT NULL,
+        `provider_response_string` text NOT NULL,
+        `created_at` datetime NOT NULL,
+        `updated_at` datetime NOT NULL,
+        PRIMARY KEY (`id`),
+        KEY `business_id` (`business_id`),
+        KEY `wallet_type` (`wallet_type`),
+        KEY `type` (`type`),
+        KEY `provider_id` (`provider_id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type`, `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `url2`, `remark`, `currency`, `balance`, `created_at`, `updated_at`) VALUES (NULL, 'Simplex', 'simplex', 'nuxpay', '', '', 'exchange', '', '', '', '', '', '', '', '', '', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type`, `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `url2`, `remark`, `currency`, `balance`, `created_at`, `updated_at`) VALUES (NULL, 'Xanpool', 'xanpool', 'nuxpay', '', '', 'exchange', '', '', '', '', '', '', '', '', '', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `processes` (`id`, `name`, `file_path`, `output_path`, `process_id`, `disabled`, `arg1`, `arg2`, `arg3`, `arg4`, `arg5`, `created_at`, `updated_at`) VALUES (NULL, 'processCheckSimplexOrder.php', '../modules/xunphp/process/processCheckSimplexOrder.php', '../modules/xunphp/process/log/processCheckSimplexOrder.log', '', '', '', '', '', '', '', NOW(), NOW());
+    </query>
+</document>

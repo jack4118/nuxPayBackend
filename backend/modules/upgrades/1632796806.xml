@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<document type="TABLE">	
+
+    <query>
+        INSERT INTO `provider_setting` 
+        (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES 
+        ( 'minSwapUSD', '10', 'coins2', 0, NOW(), NOW());
+    </query>  
+    
+    <query>
+        INSERT INTO `provider_setting` 
+        (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES 
+        ( 'lotStepSize', '0.00010000', 'coins2', 0, NOW(), NOW());
+    </query>  
+
+</document>

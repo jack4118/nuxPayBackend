@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+	<query>
+                CREATE TABLE `xun_request_fund_item_detail` (
+                `id` int(11) NOT NULL AUTO_INCREMENT,
+                `invoice_detail_id` int(11) NOT NULL,
+                `item_name` text NOT NULL,
+                `unit_price` decimal(20,8) NOT NULL,
+                `quantity` int(11) NOT NULL,
+                `total_price` decimal(20,8) NOT NULL,
+                PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+	</query>
+        <query>
+                ALTER TABLE `xun_request_fund_item_detail` ADD INDEX `invoice_detail_id` (`invoice_detail_id`);
+        </query>
+</document>

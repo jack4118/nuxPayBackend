@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_service_charge_audit` ADD `received_transaction_hash` VARCHAR(255) NOT NULL AFTER `fund_out_id`, ADD INDEX `received_transaction_hash` (`received_transaction_hash`);
+    </query>
+</document>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'minerFeePoolAddress', '', '', '', 'Miner Pool Address', 'NuxPay'); 
+    </query>
+    <query>
+       ALTER TABLE `xun_marketer_commission_transaction` ADD `pool_transferred` TINYINT(1) NOT NULL AFTER `balance`, ADD INDEX `pool_transferred` (`pool_transferred`);
+    </query>
+</document>

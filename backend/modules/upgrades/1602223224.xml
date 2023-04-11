@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE reseller SET status = 'approved' where status = '' and password != '';
+    </query>
+</document>

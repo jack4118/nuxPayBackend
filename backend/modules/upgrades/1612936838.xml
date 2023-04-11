@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_payment_transaction` ADD `crypto_transaction_token` VARCHAR(255) NOT NULL AFTER `expires_at`, ADD `payment_type` VARCHAR(255) NOT NULL AFTER `crypto_transaction_token`;
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_payment_transaction` ADD INDEX `crypto_transaction_token` (`crypto_transaction_token`);
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_payment_transaction` ADD INDEX `payment_type` (`payment_type`);
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_send_fund` ADD `pg_transaction_token` VARCHAR(255) NOT NULL AFTER `escrow`;
+    </query> 
+</document>

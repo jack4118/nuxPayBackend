@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `site` ADD `image_url_path` VARCHAR(255) NOT NULL AFTER `reseller_website`;
+    </query>
+</document>

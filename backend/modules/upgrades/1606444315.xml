@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    
+    <!--  xun_crypto_history table, order_processed  -->
+    <query>
+        ALTER TABLE `xun_crypto_history` 
+        ADD COLUMN `order_processed` BIGINT(20) NOT NULL AFTER `gw_type`;
+    </query>
+
+    <!-- xun_crypto_history, add index order_processed -->
+    <query>
+    	ALTER TABLE `xun_crypto_history` 
+        ADD INDEX `order_processed` (`order_processed`);
+    </query>
+
+    <!--  xun_crypto_history table, exchange_order_id  -->
+    <query>
+        ALTER TABLE `xun_crypto_history` 
+        ADD COLUMN `exchange_order_id` BIGINT(20) NOT NULL AFTER `gw_type`;
+    </query>
+
+    <!-- xun_crypto_history, add index exchange_order_id -->
+    <query>
+    	ALTER TABLE `xun_crypto_history` 
+        ADD INDEX `exchange_order_id` (`exchange_order_id`);
+    </query>    
+
+</document>

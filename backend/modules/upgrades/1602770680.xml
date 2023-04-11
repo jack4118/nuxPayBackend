@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `short_url` ADD `short_code` VARCHAR(255) NOT NULL AFTER `id`;
+    </query>
+    <query>
+        ALTER TABLE `short_url` ADD UNIQUE `short_code` (`short_code`);
+    </query>
+</document>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <!-- Update supported currency for xanpool to add trx-usdt -->
+    <query>
+        UPDATE provider_setting
+        SET value = 'btc,eth,usdt,trx-usdt'
+        WHERE name = 'supportedCurrencies' AND provider_id = 27;
+    </query>
+</document>

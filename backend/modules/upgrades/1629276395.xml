@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+  
+    <!-- add aax provider to provider table-->
+    <query>
+        INSERT INTO `provider` (`company`, `name`, `username`, `password`, `api_key`, `type`, `priority`, `disabled`, `deleted`) 
+        VALUES ('AAX', 'aax', '', '', '', 'exchange_swap', '0', '1', '0') ;
+    </query>
+</document>

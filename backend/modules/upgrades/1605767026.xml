@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>    
+        ALTER TABLE `xun_business_account` ADD `upgraded_date` DATETIME NOT NULL AFTER `last_login`;
+    </query>
+    
+</document>

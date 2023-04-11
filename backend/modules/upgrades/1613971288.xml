@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+       UPDATE system_settings SET reference = 'tetherUSD' WHERE name = 'bcExternalCompanyPoolAddress';
+    </query>
+    <query>
+       INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'bcExternalCompanyPoolAddress', '', '', 'tronUSDT', 'Blockchain external company pool address', 'TheNux');
+    </query>
+</document>

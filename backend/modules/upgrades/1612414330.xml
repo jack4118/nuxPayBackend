@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+       INSERT INTO `system_settings` 
+       (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) 
+       VALUES 
+       (NULL, 'sms1232wayApiKey', '0b309a37578625f875992c3ef3180d9c', '', '', 'sms 2way api key', 'TheNux');
+    </query>
+</document>

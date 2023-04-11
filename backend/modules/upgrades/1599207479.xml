@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+       INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'minerFeeSenderWalletAddress', '0x406198aD26DeD711878b2702a9Fa23fdCB4a557e', '', '', 'Miner Fee Topup Sender Address', 'TheNux');
+    </query>
+</document>

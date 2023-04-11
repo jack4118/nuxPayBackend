@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `xun_payment_gateway_invoice_transaction` SET gw_type='PG' WHERE gw_type='';
+    </query>
+    <query>
+        UPDATE `xun_payment_gateway_payment_transaction` SET gw_type='PG' WHERE gw_type='';
+    </query>
+    <query>
+        UPDATE `xun_payment_gateway_invoice_detail` SET gw_type='PG' WHERE gw_type='';
+    </query>
+    <query>
+        UPDATE `xun_crypto_history` SET gw_type='PG' WHERE gw_type='';
+    </query>
+</document>

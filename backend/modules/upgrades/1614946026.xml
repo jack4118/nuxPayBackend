@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `xun_marketplace_currencies` (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES (NULL, 'Huat Coin', 'cryptocurrency', 'huat', 'huat', 'huatcoin', 'huatcoin', '1.00000000', '100000000', '100000000', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/cryptocurrency/huatcoin.png', '0', '0', '6aba26cf4869aeae12abfcdc79231131', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+    <query>
+        INSERT INTO `xun_coins` (`id`, `currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `sequence`, `created_at`, `updated_at`) VALUES (NULL, 'huatcoin', '100000000', 'cryptocurrency', 'huatcoin', '', '', '', '', '', '', '1', '', '0', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+    </query>
+</document>

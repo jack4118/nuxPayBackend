@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_history_summary` CHANGE `transaction_date` `transaction_date` DATE NOT NULL;
+    </query>
+</document>

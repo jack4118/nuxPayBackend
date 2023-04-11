@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider`(`company`,`name`,`username`,`password`,`type`,`created_at`) VALUES ('NuxPay','noreply_mail','no-reply@nuxpay.com','e3Bc6&amp;pZ','notification',NOW() );
+    </query>
+    <query>
+        INSERT INTO `provider`(`company`,`name`,`username`,`password`,`type`,`created_at`) VALUES ('PPay','noreply_mail','no-reply@nuxpay.com','e3Bc6&amp;pZ','notification',NOW() );
+    </query>
+    <query>
+        INSERT INTO `provider`(`company`,`name`,`username`,`password`,`type`,`created_at`) VALUES ('GemDirectPay','noreply_mail','no-reply@nuxpay.com','e3Bc6&amp;pZ','notification',NOW() );
+    </query>
+</document>

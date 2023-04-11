@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+  
+    <!-- BTCUSDT-->
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapUSDT', '20', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapBTC', '0.0005', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minPrice', '0.01000000', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxPrice', '999999.00000000', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('priceTickSize', '0.01000000', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('lotStepSize', '0.00010000', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minQty', '0.0001', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxQty', '30.00000000', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxOrders', '200', 'BTCUSDT', 28, NOW(), NOW());
+    </query>
+
+
+    <!-- ETHBTC-->
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapETH', '0.01', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapBTC', '0.0005', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minPrice', '0.000001', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxPrice', '999999.00000000', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('priceTickSize', '0.000001', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('lotStepSize', '0.001', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minQty', '0.002', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxQty', '99999999.00000000', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxOrders', '200', 'ETHBTC', 28, NOW(), NOW());
+    </query>
+
+
+    <!-- ETHUSDT-->
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapETH', '0.01', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapUSDT', '20.0000', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minPrice', '0.01', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxPrice', '999999.00000000', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('priceTickSize', '0.01', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('lotStepSize', '0.001', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minQty', '0.002', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxQty', '1550.00000000', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxOrders', '200', 'ETHUSDT', 28, NOW(), NOW());
+    </query>
+
+
+    <!-- FILUSDT-->
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapFIL', '0.5', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minSwapUSDT', '20.0000', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minPrice', '0.01', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxPrice', '999999.00000000', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('priceTickSize', '0.01', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('lotStepSize', '0.0001', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minQty', '0.2', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxQty', '26000.00000000', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxOrders', '200', 'FILUSDT', 28, NOW(), NOW());
+    </query>
+</document>

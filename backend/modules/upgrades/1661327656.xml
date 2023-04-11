@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `sent_history` 
+        ADD COLUMN `respond` LONGTEXT NOT NULL
+        AFTER `error_count`;
+    </query>
+
+</document>

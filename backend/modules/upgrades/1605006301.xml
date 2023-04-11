@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+
+    <query>
+        ALTER TABLE `xun_marketer_commission_transaction` CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+    </query>
+    
+
+    
+
+</document>
+
+
+

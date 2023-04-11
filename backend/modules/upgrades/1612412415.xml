@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+       INSERT INTO `system_settings` 
+       (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) 
+       VALUES 
+       (NULL, 'sms123Email2way', 'support@thenux.com', '', '', 'SMS 123 2way email address', 'TheNux');
+    </query>
+</document>

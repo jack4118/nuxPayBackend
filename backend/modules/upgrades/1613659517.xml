@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        DROP TABLE xun_payment_transaction;
+    </query>
+    <query>
+        CREATE TABLE `xun_payment_transaction` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `business_id` bigint(20) NOT NULL,
+        `crypto_amount` decimal(20,8) NOT NULL,
+        `fiat_amount` decimal(20,8) NOT NULL,
+        `fiat_currency_id` varchar(255) NOT NULL,
+        `transaction_type` varchar(255) NOT NULL,
+        `transaction_token` varchar(255) NOT NULL,
+        `reference_table` varchar(255) NOT NULL,
+        `reference_id` bigint(20) NOT NULL,
+        `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`),
+        KEY `business_id` (`business_id`),
+        KEY `fiat_currency_id` (`fiat_currency_id`),
+        KEY `transaction_type` (`transaction_type`),
+        KEY `transaction_token` (`transaction_token`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+    <query>
+        CREATE TABLE `xun_payment_method` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `payment_tx_id` bigint(20) NOT NULL,
+        `address` varchar(255) NOT NULL,
+        `wallet_type` varchar(255) NOT NULL,
+        `type` varchar(255) NOT NULL,
+        `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`),
+        KEY `payment_tx_id` (`payment_tx_id`),
+        KEY `address` (`address`),
+        KEY `wallet_type` (`wallet_type`),
+        KEY `type` (`type`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+    <query>
+        CREATE TABLE `xun_payment_details` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `payment_id` varchar(255) NOT NULL,
+        `payment_tx_id` bigint(20) NOT NULL,
+        `payment_method_id` bigint(20) NOT NULL,
+        `sender_internal_address` varchar(255) NOT NULL,
+        `sender_external_address` varchar(255) NOT NULL,
+        `recipient_internal_address` varchar(255) NOT NULL,
+        `recipient_external_address` varchar(255) NOT NULL,
+        `pg_address` varchar(255) NOT NULL,
+        `amount` decimal(20,8) NOT NULL,
+        `wallet_type` varchar(255) NOT NULL,
+        `service_charge_amount` decimal(20,8) NOT NULL,
+        `service_charge_wallet_type` varchar(255) NOT NULL,
+        `fee_amount` decimal(20,8) NOT NULL,
+        `fee_wallet_type` varchar(255) NOT NULL,
+        `actual_fee_amount` decimal(20,18) NOT NULL,
+        `actual_fee_wallet_type` varchar(255) NOT NULL,
+        `status` varchar(255) NOT NULL,
+        `fund_in_table` varchar(255) NOT NULL,
+        `fund_in_id` bigint(20) NOT NULL,
+        `fund_out_table` varchar(255) NOT NULL,
+        `fund_out_id` bigint(20) NOT NULL,
+        `reference_id` varchar(255) NOT NULL,
+        `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`),
+        KEY `payment_id` (`payment_id`),
+        KEY `payment_tx_id` (`payment_tx_id`),
+        KEY `payment_method_id` (`payment_method_id`),
+        KEY `status` (`status`),
+        KEY `wallet_type` (`wallet_type`),
+        KEY `pg_address` (`pg_address`),
+        KEY `reference_id` (`reference_id`),
+        KEY `fund_in_id` (`fund_in_id`),
+        KEY `fund_out_id` (`fund_out_id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+    <query>
+        CREATE TABLE `xun_payment_transaction_history` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `payment_details_id` bigint(20) NOT NULL,
+        `withdrawal_id` bigint(20) NOT NULL,
+        `sender_address` varchar(255) NOT NULL,
+        `recipient_address` varchar(255) NOT NULL,
+        `sender_user_id` varchar(255) NOT NULL,
+        `recipient_user_id` varchar(255) NOT NULL,
+        `amount` decimal(20,8) NOT NULL,
+        `wallet_type` varchar(255) NOT NULL,
+        `fee_amount` decimal(20,18) NOT NULL,
+        `fee_wallet_type` varchar(255) NOT NULL,
+        `transaction_id` varchar(255) NOT NULL,
+        `transaction_token` varchar(255) NOT NULL,
+        `exchange_rate` decimal(20,8) NOT NULL,
+        `miner_fee_exchange_rate` decimal(20,8) NOT NULL,
+        `status` varchar(255) NOT NULL,
+        `reference_id` bigint(20) NOT NULL,
+        `type` varchar(255) NOT NULL,
+        `transaction_type` varchar(255) NOT NULL,
+        `gateway_type` varchar(255) NOT NULL,
+        `is_internal` tinyint(1) NOT NULL,
+        `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`),
+        KEY `payment_details_id` (`payment_details_id`),
+        KEY `withdrawal_id` (`withdrawal_id`),
+        KEY `transaction_id` (`transaction_id`),
+        KEY `reference_id` (`reference_id`),
+        KEY `transaction_type` (`transaction_type`),
+        KEY `status` (`status`),
+        KEY `wallet_type` (`wallet_type`),
+        KEY `sender_user_id` (`sender_user_id`),
+        KEY `recipient_user_id` (`recipient_user_id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+    
+    
+</document>

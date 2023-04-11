@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>    
+        UPDATE `system_settings` SET value = "https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/landingpagedefault1.png,https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/landingpagedefault2.png,https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/landingpagedefault3.png,https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/landingpagedefault4.png,https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/landingpagedefault5.png,https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/landingpagedefault6.png,https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/landingpagedefault7.png,https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/landingpagedefault8.png" WHERE name = 'landingPageDefaultImage'
+    </query>
+</document>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        DELETE FROM `provider_setting` WHERE `provider_setting`.`name` = "supportedCurrencies"
+    </query>
+</document>

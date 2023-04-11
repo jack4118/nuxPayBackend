@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `roles` (`id`, `name`, `description`, `disabled`, `site`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'NuxPay HR', 'NuxPay HR', '0', 'HR', '0', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, (SELECT `id` FROM `roles` WHERE name = 'NuxPay HR'), (SELECT `id` FROM `permissions` WHERE `name` = 'Merchant' AND `site` = 'Reseller' LIMIT 1), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+     <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, (SELECT `id` FROM `roles` WHERE name = 'NuxPay HR'), (SELECT `id` FROM `permissions` WHERE `name` = 'Reseller' AND `site` = 'Reseller' LIMIT 1), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+     <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, (SELECT `id` FROM `roles` WHERE name = 'NuxPay HR'), (SELECT `id` FROM `permissions` WHERE `name` = 'Reseller Application Listing' AND `site` = 'Reseller' LIMIT 1), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+     <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, (SELECT `id` FROM `roles` WHERE name = 'NuxPay HR'), (SELECT `id` FROM `permissions` WHERE `name` = 'Agent Listing' AND `site` = 'Reseller' LIMIT 1), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, (SELECT `id` FROM `roles` WHERE name = 'NuxPay HR'), (SELECT `id` FROM `permissions` WHERE `name` = 'Reseller Listing' AND `site` = 'Reseller' LIMIT 1), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, (SELECT `id` FROM `roles` WHERE name = 'NuxPay HR'), (SELECT `id` FROM `permissions` WHERE `name` = 'Dashboard' AND `site` = 'Reseller' LIMIT 1), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+</document>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_payment_transaction` ADD `destination_address` VARCHAR(255) NOT NULL AFTER `status`;
+    </query>
+</document>

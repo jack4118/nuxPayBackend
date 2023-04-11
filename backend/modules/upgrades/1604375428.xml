@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_history_summary` ADD `transaction_date` DATETIME NOT NULL AFTER `transaction_date`;
+    </query>
+</document>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_details` 
+        ADD COLUMN `swap_history_id` BIGINT(20) NOT NULL DEFAULT 0
+        AFTER `reference_id`;
+    </query>
+
+</document>

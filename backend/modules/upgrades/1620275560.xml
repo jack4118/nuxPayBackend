@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minCryptoAmount', '0.0005', 'BTC', (SELECT id FROM provider where name = 'xanpool'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minCryptoAmount', '0.0079', 'ETH', (SELECT id FROM provider where name = 'xanpool'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minCryptoAmount', '100', 'USDT', (SELECT id FROM provider where name = 'xanpool'), NOW(), NOW())
+    </query>
+</document>

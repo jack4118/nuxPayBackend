@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        DELETE FROM `roles_permission` WHERE `role_id` = (SELECT `id` FROM `roles` WHERE `name` LIKE 'NuxPay Reseller') AND `permission_id` = (SELECT `id` FROM `permissions` WHERE `file_path` LIKE 'resellerListing.php' AND `site` LIKE 'Reseller' AND `name` LIKE 'Reseller Listing');
+    </query>
+</document>

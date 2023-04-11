@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `xun_coins` SET `is_payment_gateway` = '0' WHERE `xun_coins`.`currency_id` IN ('sms123rewards', 'durianmanss2', 'customerrewardsecosystem');
+    </query>
+</document>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `device_model` ( `id` INT NOT NULL AUTO_INCREMENT , `short_name` VARCHAR(255) NOT NULL , `name` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`), INDEX `short_name` (`short_name`)) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+    </query>
+    <query>
+        INSERT INTO `device_model` (`id`, `short_name`, `name`) VALUES (NULL, 'AP', 'Apple'), (NULL, 'SA', 'Samsung'), (NULL, 'HU', 'Huawei'), (NULL, 'OP', 'Oppo')
+    </query>
+</document>

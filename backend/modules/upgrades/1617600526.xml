@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_transaction_hash` ADD `bc_reference_id` BIGINT(20) NOT NULL AFTER `transaction_token`;
+    </query>
+</document>

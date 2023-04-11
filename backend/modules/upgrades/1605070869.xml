@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Withdrawal','Withdrawal','Page', (SELECT b.id from permissions b where b.name = 'Commission Listing' and b.site = 'Reseller' LIMIT 1) ,'commissionWithdrawal.php','Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Withdrawal' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Withdrawal Confirmation','Withdrawal Confirmation','Page', (SELECT b.id from permissions b where b.name = 'Withdrawal' and b.site = 'Reseller' LIMIT 1) ,'commissionWithdrawalConfirmation.php','Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Withdrawal Confirmation' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Withdrawal Success','Withdrawal Success','Page', (SELECT b.id from permissions b where b.name = 'Withdrawal Confirmation' and b.site = 'Reseller' LIMIT 1) ,'commissionWithdrawalSuccess.php','Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Withdrawal Success' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Commission Transaction History','Commission Transaction History','Page', (SELECT b.id from permissions b where b.name = 'Commission Listing' and b.site = 'Reseller' LIMIT 1) ,'commissionTransaction.php','Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Commission Transaction History' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Commission Withdrawal History','Commission Withdrawal History','Page', (SELECT b.id from permissions b where b.name = 'Commission Listing' and b.site = 'Reseller' LIMIT 1) ,'commissionWithdrawalHistory.php','Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Commission Withdrawal History' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+
+</document>

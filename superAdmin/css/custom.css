@@ -1,0 +1,203 @@
+.overflowX {
+  overflow-x: auto;
+}
+
+.m-w-100 {
+  max-width: 90px;
+}
+
+.m-t-n30
+{
+	margin-top: -30px;
+}
+
+.float-right
+{
+	float: right;
+}
+
+.float-left
+{
+	float: left;
+}
+
+/*Canvas loader in head.php*/
+#canvasLoader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(243, 243, 243, 0.4);
+}
+#canvasLoaderContainer {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+/*Canvas loader in head.php*/
+
+/*Canvas message in head.php*/
+#canvasMessage .modal-header,
+#canvasMessage .modal-body,
+#canvasMessage .modal-footer {
+    text-align: center;
+    border: 0;
+}
+
+#canvasMessage .modal-footer {
+    padding-bottom: 45px;
+}
+
+#canvasMessage .modal-title i {
+    display: block;
+    padding-top: 25px;
+}
+
+/*Canvas message in head.php*/
+
+/* webServices.php */
+#webservicesListTable i.cursorPointer:hover {
+    color: #71b6f9;
+}
+
+#dataMessage .modal-header {
+    text-align: center;
+}
+
+#dataMessage .modal-footer {
+    padding-bottom: 45px;
+}
+
+#dataMessage .modal-title i {
+    display: block;
+    padding-top: 25px;
+}
+
+#dataAlertMessage {
+    overflow-x: auto;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+/* webServices.php*/
+
+/* General interface */
+.navbar-left {
+    float: left;
+}
+
+li.breadcrumb-item {
+    padding: 0px 2px !important;
+}
+    
+.content-page .content {
+    margin-top: 120px;
+}
+
+#breadcrumbs {
+    height: 40px;
+    background: #ebeff2;
+    margin-left: 250px;
+}
+
+@media (min-width: 768px) {
+    #breadcrumbs {
+        display: block;
+    }
+    
+    .enlarged #breadcrumbs {
+        display: block;
+    }
+}
+
+.forced.enlarged #breadcrumbs {
+    display: block;
+}
+
+/*
+.forced #sidebar-menu {
+    top: 50px;
+}
+*/
+
+ul.breadcrumb {
+    padding-left: 40px;
+}
+
+.enlarged #breadcrumbs {
+    margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+    .enlarged #breadcrumbs {
+        margin-left: 0px;
+    }
+    .enlarged .content-page .content {
+        margin-top: 150px;
+    }
+    .forced #breadcrumbs {
+        margin-left: 0px;
+        display: none;
+    }
+}
+
+#logoutBtn:hover {
+    color: #71b6f9;
+    cursor: pointer;
+}
+
+/* Table margin set for paginateText */
+#basicwizard .table-responsive {
+    margin-bottom: 10px;
+}
+/* General interface */
+
+/* sponsorTree View */
+ul.noList {
+    list-style: none;
+    list-style-type: none;
+}
+
+#navListTreeView i:hover {
+    cursor: pointer;
+}
+
+#navListTreeView i {
+  float: none;
+  transition: transform .65s ease;
+}
+
+#navListTreeView i.rotate90 {
+    transform: rotate(90deg);
+}
+
+#navListTreeView ul.group-list {
+    padding-left: 0px;
+}
+
+#navListTreeView a,
+#navListTreeView a:hover,
+#navListTreeView a:active, 
+#navListTreeView a:focus {
+    text-decoration: none;
+    text-shadow: none;
+    color: #797979;
+}
+
+#navListTreeView a:hover {
+    cursor: pointer;
+}
+/* sponsorTree View */
+
+.form-border-0 {
+    border : 0 !important;
+}

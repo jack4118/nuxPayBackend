@@ -1,0 +1,18 @@
+{
+  "name": "business-sending",
+  "version": "1.0.0",
+  "description": "<?php",
+  "main": "businessSendingNodeJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "forever": "^1.0.0",
+    "forever-monitor": "^1.7.1",
+    "mysql": "^2.17.1",
+    "node-xmpp": "^1.1.0"
+  }
+}

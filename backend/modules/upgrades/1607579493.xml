@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'poolFundOutThreshold', '10', '', '', 'Pool Fund Out Threshold Amount(USD)', 'NuxPay');
+    </query>
+     <query>
+        ALTER TABLE `xun_crypto_history` ADD `pool_transferred` TINYINT(1) NOT NULL AFTER `order_processed`;
+     </query>
+     <query>
+        ALTER TABLE `xun_crypto_history` ADD INDEX `pool_transferred` (`pool_transferred`);
+     </query>
+     <query>
+        UPDATE xun_crypto_history SET pool_transferred = 1;
+     </query>
+</document>

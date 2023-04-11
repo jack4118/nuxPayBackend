@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+       INSERT INTO `system_settings` 
+       (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) 
+       VALUES 
+       (NULL, 'escrowInternalAddress', '', '', '', 'Escrow internal address', 'NuxPay');
+    </query>
+</document>

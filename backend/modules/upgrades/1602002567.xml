@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_user_verification` ADD COLUMN `email` VARCHAR(255) NOT NULL DEFAULT '' AFTER `mobile`;
+    </query>
+    <query>
+        ALTER TABLE `xun_user_verification` ADD INDEX `email` (`email`);
+    </query>
+</document>

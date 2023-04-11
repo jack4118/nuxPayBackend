@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<document type="TABLE">	
+
+    <!-- TUSD2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('USD2 (TRC20)', 'cryptocurrency', 'tusd2', 'USD2 (TRC20)', 'tusd2', 'usd', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+    <!-- TMYR2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('MYR2 (TRC20)', 'cryptocurrency', 'tmyr2', 'MYR2 (TRC20)', 'tmyr2', 'myr', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+    <!-- TSGD2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('SGD2 (TRC20)', 'cryptocurrency', 'tsgd2', 'SGD2 (TRC20)', 'tsgd2', 'sgd', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+    <!-- THKD2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('HKD2 (TRC20)', 'cryptocurrency', 'thkd2', 'HKD2 (TRC20)', 'thkd2', 'hkd', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+    <!-- TRMB2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('RMB2 (TRC20)', 'cryptocurrency', 'trmb2', 'RMB2 (TRC20)', 'trmb2', 'rmb', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+    <!-- TEUR2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('EUR2 (TRC20)', 'cryptocurrency', 'teur2', 'EUR2 (TRC20)', 'teur2', 'eur', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+    <!-- TWON2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('WON2 (TRC20)', 'cryptocurrency', 'twon2', 'WON2 (TRC20)', 'twon2', 'won', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+    
+    <!-- TYEN2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('YEN2 (TRC20)', 'cryptocurrency', 'tyen2', 'YEN2 (TRC20)', 'tyen2', 'yen', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+    <!-- TTHB2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('THB2 (TRC20)', 'cryptocurrency', 'tthb2', 'THB2 (TRC20)', 'tthb2', 'thb', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+    <!-- TPHP2 -->
+    <query>
+        INSERT INTO `xun_marketplace_currencies` 
+        (`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`) VALUES 
+        ('PHP2 (TRC20)', 'cryptocurrency', 'tphp2', 'PHP2 (TRC20)', 'tphp2', 'php', '1', '100', '0', '', '0', '1', '', '', '', 'white', NOW(), NOW());
+    </query>  
+
+</document>

@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+		UPDATE processes set disabled = 1 where name IN ('processGetCurrencyRate', 'processGetCurrencyExchangeRate', 'processRetryFailedEscrow');
+	</query>
+    <query>
+		UPDATE processes set disabled = 2 where name LIKE '%processDailyAutoFundOut%';
+	</query>
+    <query>
+		UPDATE processes set disabled = 2 where name LIKE '%processDailyMarketerFundOut%';
+	</query>
+    <query>
+		UPDATE processes set file_path = '../modules/xunphp/process/getPricingRate.php' where name LIKE '%getPricingRate%';
+	</query>
+    <query>
+		UPDATE processes set file_path = '../modules/xunphp/process/monitorPricingRate.php' where name LIKE '%monitorPricingRate%';
+	</query>
+    <query>
+		UPDATE processes set file_path = '../modules/xunphp/process/getFiatCurrency.php' where name LIKE '%getFiatCurrency%';
+	</query>
+    <query>
+		UPDATE processes set file_path = '../modules/xunphp/process/monitorFiatCurrency.php' where name LIKE '%monitorFiatCurrency%';
+	</query>
+    <query>
+		UPDATE processes set output_path = '../modules/xunphp/process/log/getPricingRate.log' where name LIKE '%getPricingRate%';
+	</query>
+    <query>
+		UPDATE processes set output_path = '../modules/xunphp/process/log/monitorPricingRate.log' where name LIKE '%monitorPricingRate%';
+	</query>
+    <query>
+		UPDATE processes set output_path = '../modules/xunphp/process/log/getFiatCurrency.log' where name LIKE '%getFiatCurrency%';
+	</query>
+    <query>
+		UPDATE processes set output_path = '../modules/xunphp/process/log/monitorFiatCurrency.log' where name LIKE '%monitorFiatCurrency%';
+	</query>
+    <query>
+		INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type`, `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `url2`, `remark`, `currency`, `balance`, `created_at`, `updated_at`) VALUES (NULL, 'TheNux', 'thenux', '', '', '', 'notification', '', '', '', '', '', '', '', '', '', NOW(), NOW());
+	</query>
+     <query>
+	    INSERT INTO `processes` (`id`, `name`, `file_path`, `output_path`, `process_id`, `disabled`, `arg1`, `arg2`, `arg3`, `arg4`, `arg5`, `created_at`, `updated_at`) VALUES (NULL, 'processQueueCallback', '../modules/xunphp/process/processQueueCallback.php', '../modules/xunphp/process/processQueueCallback.log', '', '0', '1', '', '', '', '', NOW(), NOW());
+	</query>
+</document>

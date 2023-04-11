@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_fund_out_details` ADD `pool_transferred` TINYINT(1) NOT NULL AFTER `order_processed`;
+    </query>
+    <query>
+        UPDATE xun_crypto_fund_out_details set pool_transferred = 1;
+    </query>
+    <query>
+        ALTER TABLE `xun_crypto_fund_out_details` ADD INDEX `pool_transferred` (`pool_transferred`);
+    </query>
+</document>

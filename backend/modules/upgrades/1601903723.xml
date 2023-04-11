@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Merchant Profile','Edit Merchant Details','Page',(SELECT b.id from permissions b where b.name = 'Merchant' and b.site = 'Admin' LIMIT 1),'editMerchantDetails.php','Admin', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Merchant Profile','Edit Merchant Details','Page',(SELECT b.id from permissions b where b.name = 'Merchant' and b.site = 'Reseller' LIMIT 1),'editMerchantDetails.php','Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Merchant Profile' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Distributor'),(SELECT id from permissions where name = 'Merchant Profile' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Site Admin'),(SELECT id from permissions where name = 'Merchant Profile' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Admin'),(SELECT id from permissions where name = 'Merchant Profile' and site = 'Admin' LIMIT 1), 0, NOW(), NOW());
+    </query>
+</document>

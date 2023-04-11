@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_payment_request` ADD `reference_id` VARCHAR(255) NOT NULL AFTER `status`;
+    </query>
+</document>

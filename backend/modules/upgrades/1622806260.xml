@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE xun_marketplace_currencies SET name = 'USDT (TRC20)' where currency_id = 'tronusdt';
+    </query>
+</document>

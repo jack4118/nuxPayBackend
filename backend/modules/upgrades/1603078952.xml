@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+
+    <query>
+        INSERT INTO `permissions` ( `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `site`, `created_at`, `updated_at`) VALUES ('Campaign', 'Campaign', 'Menu', '0', '', '1', '', '', '0', 'Admin', NOW(), NOW());
+    </query>
+    
+    <query>    
+        INSERT INTO `permissions` ( `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `site`, `created_at`, `updated_at`) VALUES ('Campaign', 'Campaign', 'Menu', '0', '', '1', '', '', '0', 'Reseller', NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ((SELECT id from roles where name = 'NuxPay Admin'),(SELECT id from permissions where name = 'Campaign' AND site = 'Admin'), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ((SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Campaign' AND site = 'Reseller'), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ((SELECT id from roles where name = 'NuxPay Distributor'),(SELECT id from permissions where name = 'Campaign' AND site = 'Reseller'), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ((SELECT id from roles where name = 'NuxPay Site Admin'),(SELECT id from permissions where name = 'Campaign' AND site = 'Reseller'), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Create Campaign','Create Campaign','Sub Menu', (SELECT b.id from permissions b where b.name = 'Campaign' and b.site = 'Admin' LIMIT 1) ,'createCampaign.php','Admin', NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Create Campaign','Create Campaign','Sub Menu', (SELECT b.id from permissions b where b.name = 'Campaign' and b.site = 'Reseller' LIMIT 1) ,'createCampaign.php','Reseller', NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ((SELECT id from roles where name = 'NuxPay Admin'),(SELECT id from permissions where name = 'Create Campaign' AND site = 'Admin'), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ((SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Create Campaign' AND site = 'Reseller'), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ((SELECT id from roles where name = 'NuxPay Distributor'),(SELECT id from permissions where name = 'Create Campaign' AND site = 'Reseller'), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ((SELECT id from roles where name = 'NuxPay Site Admin'), (SELECT id from permissions where name = 'Create Campaign' AND site = 'Reseller'), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Campaign Listing','Campaign Listing','Sub Menu', (SELECT b.id from permissions b where b.name = 'Campaign' and b.site = 'Admin' LIMIT 1) ,'campaignListing.php','Admin', NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `site`, `created_at`, `updated_at`) VALUES ('Campaign Listing','Campaign Listing','Sub Menu', (SELECT b.id from permissions b where b.name = 'Campaign' and b.site = 'Reseller' LIMIT 1) ,'campaignListing.php','Reseller', NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Campaign Listing' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Distributor'),(SELECT id from permissions where name = 'Campaign Listing' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Site Admin'),(SELECT id from permissions where name = 'Campaign Listing' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Admin'),(SELECT id from permissions where name = 'Campaign Listing' and site = 'Admin' LIMIT 1), 0, NOW(), NOW());
+    </query>
+
+</document>

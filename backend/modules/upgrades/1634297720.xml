@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_business` 
+        ADD COLUMN `bypass_buysell_service_charge` TINYINT(1) NOT NULL DEFAULT 0
+        AFTER `buysell_crypto_redirect_url`;
+    </query>
+
+</document>

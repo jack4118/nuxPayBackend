@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `site` ADD `theme_color` VARCHAR(255) NOT NULL AFTER `image_url_path`; 
+    </query>
+</document>

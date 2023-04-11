@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+
+<!-- for simplex -->
+    <query>
+        INSERT INTO provider_setting (name, value, type, provider_id, created_at, updated_at)
+        VALUES ('defaultWalletType', 'tronusdt', 'TRX-USDT', '26', NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO provider_setting (name, value, type, provider_id, created_at, updated_at)
+        VALUES ('defaultSymbol', 'trx-usdt', 'TRX-USDT', '26', NOW(), NOW());
+    </query>
+
+    <!-- for xanpool -->
+    <query>
+        INSERT INTO provider_setting (name, value, type, provider_id, created_at, updated_at)
+        VALUES ('defaultWalletType', 'tronusdt', 'TRX-USDT', '27', NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO provider_setting (name, value, type, provider_id, created_at, updated_at)
+        VALUES ('defaultSymbol', 'trx-usdt', 'TRX-USDT', '27', NOW(), NOW());
+    </query>
+
+
+    <!-- default currency rate -->
+    <query>
+        INSERT INTO provider_setting (name, value, type, provider_id, created_at, updated_at)
+        VALUES ('defaultCurrencyRate', 'tronUSDT', 'TRX-USDT', '0', NOW(), NOW());
+    </query>
+
+
+</document>

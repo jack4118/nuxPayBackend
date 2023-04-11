@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_history` ADD `withdrawal_id` BIGINT(20) NOT NULL AFTER `type`;
+    </query>
+    <query>
+        ALTER TABLE `xun_crypto_history` ADD INDEX `withdrawal_id` (`withdrawal_id`);
+    </query>
+</document>

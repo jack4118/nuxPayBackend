@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_payment_transaction` ADD COLUMN `is_direct` TINYINT(1) NOT NULL DEFAULT 0 AFTER `gw_type`;
+    </query>
+
+    <query>
+        ALTER TABLE `xun_payment_gateway_payment_transaction` ADD COLUMN `direct_detail` TEXT NOT NULL AFTER `is_direct`;
+    </query>
+
+    <query>
+        ALTER TABLE `xun_payment_gateway_payment_transaction` ADD COLUMN `payment_channel` VARCHAR(255) NOT NULL AFTER `direct_detail`;
+    </query>
+
+</document>

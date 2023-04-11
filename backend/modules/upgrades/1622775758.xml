@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_business` ADD `buysell_crypto_callback_url` VARCHAR(255) NOT NULL AFTER `message_callback_url`; 
+    </query>
+</document>

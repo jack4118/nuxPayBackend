@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_payment_transaction` CHANGE `payment_amount` `fiat_amount` DECIMAL(20,8) NOT NULL;
+    </query>
+    <query>
+        ALTER TABLE `xun_crypto_payment_transaction` CHANGE `payment_currency` `fiat_currency` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+    </query>
+</document>

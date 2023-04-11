@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>    
+        ALTER TABLE xun_business_account ADD COLUMN account_type VARCHAR(50) NOT NULL DEFAULT "basic" AFTER password;
+    </query>
+    <query>
+        UPDATE xun_business_account SET account_type = "premium";
+    </query>
+</document>

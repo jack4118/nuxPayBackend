@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `permissions` SET `priority` = '1' WHERE `file_path` LIKE 'merchantListing.php' AND `site` LIKE 'Reseller';
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '2' WHERE `file_path` LIKE 'transactionHistory.php' AND `site` LIKE 'Reseller';
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '3' WHERE `file_path` LIKE 'fundOutListing.php' AND `site` LIKE 'Reseller';
+    </query>    
+    <query>
+        UPDATE `permissions` SET `priority` = '4' WHERE `file_path` LIKE 'withdrawalHistory.php' AND `site` LIKE 'Reseller';
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '5' WHERE `name` LIKE 'Reseller' AND `site` LIKE 'Reseller';
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '6' WHERE `file_path` LIKE 'distributorListing.php' AND `site` LIKE 'Reseller';
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '7' WHERE `name` LIKE 'Campaign' AND `site` LIKE 'Reseller';
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '8' WHERE `file_path` LIKE 'accountSetting.php' AND `site` LIKE 'Reseller';
+    </query>
+</document>

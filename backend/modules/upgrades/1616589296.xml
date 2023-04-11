@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'userJoinDateLimit', '1616589296', '', '', 'Only those user join after this time stamp will receive the received fund notification', '');
+    </query>
+     
+</document>

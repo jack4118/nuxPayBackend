@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+       ALTER TABLE `reseller` ADD `is_white_label` TINYINT(1) NOT NULL AFTER `suspended`;
+    </query>
+</document>

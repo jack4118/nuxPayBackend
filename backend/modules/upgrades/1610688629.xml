@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_coins` ADD `is_buy_sell` tinyint(1) NOT NULL DEFAULT '0' AFTER `is_auto_fund_out`;
+    </query>
+    
+    <query>
+    	UPDATE `xun_coins` SET `is_buy_sell`=1 WHERE currency_id in ('tetherusd','bitcoin','ethereum','bitcoincash','litecoin');
+    </query>
+    
+</document>

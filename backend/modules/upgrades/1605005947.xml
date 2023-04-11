@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+
+    
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `site`, `created_at`, `updated_at`) VALUES ('Commission Listing','Commission Listing','Menu', 0,'commissionListing.php', 7, 'Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Commission Listing' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    
+
+    
+
+</document>
+
+
+

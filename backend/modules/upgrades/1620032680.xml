@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'supportedCurrencies', 'btc,eth,usdt,bch,ltc', '', '26', '', '');
+    </query>
+</document>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+  
+    <!-- change provider binance type from exchange to exchange_swap-->
+    <query>
+        UPDATE provider SET type = 'exchange_swap' WHERE name='binance' AND company='Binance' ;
+    </query>
+</document>

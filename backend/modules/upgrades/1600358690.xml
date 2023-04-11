@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+	<query>
+		ALTER TABLE `xun_crypto_destination_address` ADD `wallet_name` VARCHAR(255) NOT NULL AFTER `type`;
+	</query>
+</document>

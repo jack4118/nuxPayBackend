@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        create index received_transaction_id_index  on xun_crypto_history (received_transaction_id);
+    </query>
+
+    <query>
+        create index transaction_id_index  on xun_payment_gateway_fund_in (transaction_id);
+    </query>
+</document>

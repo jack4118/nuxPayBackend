@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `xun_request_fund_withdrawal` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `business_id` bigint(20) NOT NULL,
+        `wallet_type` varchar(255) NOT NULL,
+        `withdrawal_amount` varchar(255) NOT NULL,
+        `destination_address` varchar(255) NOT NULL,
+        `status` varchar(255) NOT NULL,
+        `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`),
+        KEY `business_id` (`business_id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+</document>

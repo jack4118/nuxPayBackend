@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    UPDATE roles_permission SET permission_id = (SELECT id FROM permissions WHERE file_path = 'withdrawalHistory.php' AND site = 'Admin') WHERE role_id = (SELECT id FROM roles WHERE name = 'NuxPay Admin' AND site = 'Admin') AND permission_id = (SELECT id FROM permissions WHERE file_path ='withdrawalHistory.php' AND site = 'Reseller');
+    </query>
+</document>

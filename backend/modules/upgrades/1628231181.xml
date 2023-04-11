@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`name`,`value`,`type`,`provider_id`,`created_at`,`updated_at`) VALUES ('markdownPercentage', '10', '', (SELECT id FROM `provider` WHERE company='Xanpool'),NOW(),NOW());
+    </query>
+
+    <query>
+        INSERT INTO `provider_setting` (`name`,`value`,`type`,`provider_id`,`created_at`,`updated_at`) VALUES ('markdownPercentage', '10', '', (SELECT id FROM `provider` WHERE company='Simplex'),NOW(),NOW());
+    </query>
+</document>

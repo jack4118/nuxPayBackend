@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    
+    <!--  xun_payment_gateway_fund_in, add column status  -->
+    <query>
+        ALTER TABLE `xun_payment_gateway_fund_in` 
+        ADD COLUMN `status` VARCHAR(255) NOT NULL AFTER `transaction_type`;
+    </query>    
+
+    <!--  xun_payment_gateway_fund_in, add index status  -->    
+     <query>
+    	ALTER TABLE `xun_payment_gateway_fund_in` 
+        ADD INDEX `status` (`status`);
+    </query>
+
+
+</document>

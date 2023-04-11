@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE xun_payment_gateway_fund_in ADD transaction_target VARCHAR(255) NOT NULL AFTER type
+    </query>
+</document>

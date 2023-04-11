@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type`, `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `url2`, `remark`, `currency`, `balance`, `created_at`, `updated_at`) VALUES (NULL, 'Binance', 'binance', 'binance', 'binance', '', 'exchange', '1', '0', '0', '', '', '', '', '', '0', NOW(), NOW());
+    </query>
+    <query>
+    	ALTER TABLE `provider_setting` DROP PRIMARY KEY;
+    </query>
+    <query>
+    	ALTER TABLE `provider_setting` CHANGE `id` `id` BIGINT AUTO_INCREMENT PRIMARY KEY;
+    </query>
+    <query>
+    	ALTER TABLE `provider_setting` DROP INDEX idx_prs_name;
+    </query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minPrice', '0.01000000', 'BTCUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxPrice', '1000000.00000000', 'BTCUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('priceTickSize', '0.01000000', 'BTCUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minQty', '0.00000100', 'BTCUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxQty', '900.00000000', 'BTCUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('lotStepSize', '0.00000100', 'BTCUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxOrders', '200', 'BTCUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minPrice', '0.01000000', 'ETHUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxPrice', '100000.00000000', 'ETHUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('priceTickSize', '0.01000000', 'ETHUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minQty', '0.00001000', 'ETHUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxQty', '9000.00000000', 'ETHUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('lotStepSize', '0.00001000', 'ETHUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxOrders', '200', 'ETHUSDT', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minPrice', '0.00000100', 'ETHBTC', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxPrice', '100.00000000', 'ETHBTC', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('priceTickSize', '0.00000100', 'ETHBTC', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('minQty', '0.00001000', 'ETHBTC', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxQty', '9000.00000000', 'ETHBTC', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('lotStepSize', '0.00001000', 'ETHBTC', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+  	<query>
+  		INSERT INTO provider_setting (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES ('maxOrders', '200', 'ETHBTC', (SELECT id FROM provider WHERE name='binance'), NOW(), NOW());
+  	</query>
+
+  	<query>
+  		CREATE TABLE `xun_swap_history` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `business_id` bigint(20) NOT NULL,
+  `business_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `reference_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `from_wallet_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `from_symbol` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `to_wallet_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `to_symbol` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `from_amount` decimal(27,10) NOT NULL,
+  `to_amount` decimal(27,10) NOT NULL,
+  `to_amount_display` decimal(27,10) NOT NULL,
+  `price_market` decimal(27,10) NOT NULL,
+  `price_display` decimal(27,10) NOT NULL,
+  `exchange_rate_market` decimal(27,10) NOT NULL,
+  `exchange_rate_display` decimal(27,10) NOT NULL,
+  `margin_percentage` decimal(5,2) NOT NULL,
+  `profit` decimal(20,10) NOT NULL,
+  `profit_usd` decimal(20,10) NOT NULL,
+  `provider_id` bigint(20) NOT NULL,
+  `provider_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `order_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `order_status` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `status` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `orders` (`order_id`,`order_status`),
+  KEY `created_at` (`created_at`),
+  KEY `providers` (`provider_id`,`provider_name`),
+  KEY `from_symbol` (`from_symbol`),
+  KEY `to_symbol` (`to_symbol`),
+  KEY `status` (`status`),
+  KEY `from_wallet_type` (`from_wallet_type`),
+  KEY `to_wallet_type` (`to_wallet_type`),
+  KEY `business` (`business_id`,`business_name`),
+  KEY `reference_id` (`reference_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+	</query>
+  <query>
+    ALTER TABLE `xun_swap_history` ADD `from_wallet_type` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `business_name`;
+  </query>
+  <query>
+    ALTER TABLE `xun_swap_history` ADD `to_wallet_type` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `from_symbol`;
+  </query>
+  <query>
+    ALTER TABLE `xun_swap_history` ADD INDEX `from_wallet_type` ( `from_wallet_type` );
+  </query>
+  <query>
+    ALTER TABLE `xun_swap_history` ADD INDEX `to_wallet_type` ( `to_wallet_type` );
+  </query>
+
+    <query>
+      CREATE TABLE `xun_swap_setting` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `from_symbol` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `to_symbol` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `common_symbol` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `method` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  `margin_percentage` decimal(5,2) NOT NULL,
+  `disabled` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+    <query>
+      ALTER TABLE `xun_swap_setting` ADD `from_wallet_type` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `id`;
+    </query>
+    <query>
+      ALTER TABLE `xun_swap_setting` ADD `to_wallet_type` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `from_symbol`;
+    </query>
+    <query>
+        INSERT INTO `xun_swap_setting` (`id` , `from_wallet_type`, `from_symbol` , `to_wallet_type`, `to_symbol` , `common_symbol` , `method` , `margin_percentage`, `disabled`) VALUES (NULL , 'tetherusd', 'USDT', 'bitcoin', 'BTC', 'BTCUSDT', 'buy', '5', '0'), (NULL , 'bitcoin', 'BTC', 'tetherusd', 'USDT', 'BTCUSDT', 'sell', '5', '0');
+    </query>
+    <query>
+        INSERT INTO `xun_swap_setting` (`id` , `from_wallet_type`, `from_symbol` , `to_wallet_type`, `to_symbol` , `common_symbol` , `method` , `margin_percentage`, `disabled`) VALUES (NULL , 'tetherusd', 'USDT', 'ethereum', 'ETH', 'ETHUSDT', 'buy', '5', '0'), (NULL , 'ethereum', 'ETH', 'tetherusd', 'USDT', 'ETHUSDT', 'sell', '5', '0');
+    </query>
+    <query>
+        INSERT INTO `xun_swap_setting` (`id` , `from_wallet_type`, `from_symbol` , `to_wallet_type`, `to_symbol` , `common_symbol` , `method` , `margin_percentage`, `disabled`) VALUES (NULL , 'bitcoin', 'BTC', 'ethereum', 'ETH', 'ETHBTC', 'buy', '5', '0'), (NULL , 'ethereum', 'ETH', 'bitcoin', 'BTC', 'ETHBTC', 'sell', '5', '0');
+    </query>
+
+    <query>
+      INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'swapInternalAddress', '', '', '', 'Swap module internal company address. Used for receiving and sending funds to business accounts.', 'Nuxpay');
+    </query>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+
+    
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `site`, `created_at`, `updated_at`) VALUES ('Sales Report','Sales Report','Menu', 0,'', 7, 'Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Sales Report' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Distributor'),(SELECT id from permissions where name = 'Sales Report' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Site Admin'),(SELECT id from permissions where name = 'Sales Report' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `site`, `created_at`, `updated_at`) VALUES ('Daily Sales','Daily Sales','Sub Menu', (SELECT id FROM (SELECT * FROM `permissions`) AS `temp_permissions` WHERE name = 'Sales Report' AND site = 'Reseller'),'salesReport.php', '', 'Reseller', NOW(), NOW())    
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Reseller'),(SELECT id from permissions where name = 'Daily Sales' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Distributor'),(SELECT id from permissions where name = 'Daily Sales' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Site Admin'),(SELECT id from permissions where name = 'Daily Sales' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+    
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `site`, `created_at`, `updated_at`) VALUES ('Top Agent','Top Agent','Sub Menu', (SELECT id FROM (SELECT * FROM `permissions`) AS `temp_permissions` WHERE name = 'Sales Report' AND site = 'Reseller'),'topBusinessDevelopment.php', '', 'Reseller', NOW(), NOW())    
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Site Admin'),(SELECT id from permissions where name = 'Top Agent' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `permissions`( `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `site`, `created_at`, `updated_at`) VALUES ('Top Reseller','Top Reseller','Sub Menu', (SELECT id FROM (SELECT * FROM `permissions`) AS `temp_permissions` WHERE name = 'Sales Report' AND site = 'Reseller'),'topSalesPerson.php', '', 'Reseller', NOW(), NOW())    
+    </query>
+    <query>
+        INSERT INTO `roles_permission`(`role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES ( (SELECT id from roles where name = 'NuxPay Distributor'),(SELECT id from permissions where name = 'Top Reseller' and site = 'Reseller' LIMIT 1), 0, NOW(), NOW());
+    </query>
+
+    
+
+</document>
+
+
+

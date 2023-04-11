@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_transaction` 
+        ADD COLUMN `fiat_currency_exchange_rate` DECIMAL(20,8) NOT NULL DEFAULT 1
+        AFTER `fiat_currency_id`;
+    </query>
+
+</document>

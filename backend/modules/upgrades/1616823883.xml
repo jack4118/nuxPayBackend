@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `xun_crypto_wallet_offset` ( `id` BIGINT(20) NOT NULL AUTO_INCREMENT , `address` VARCHAR(255) NOT NULL , `wallet_type` VARCHAR(255) NOT NULL , `amount` VARCHAR(255) NOT NULL , `disabled` TINYINT(1) NOT NULL , `created_at` DATETIME NOT NULL , PRIMARY KEY (`id`), INDEX `address` (`address`), INDEX `wallet_type` (`wallet_type`), INDEX `disabled` (`disabled`)) ENGINE = InnoDB;
+    </query>
+</document>

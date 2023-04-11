@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_coins` ADD `is_auto_fund_out` TINYINT(1) NOT NULL AFTER `is_story`;
+    </query>
+    <query>
+        UPDATE `xun_coins` SET `is_auto_fund_out` = '1' WHERE `xun_coins`.`currency_id` IN ('bitcoin', 'tetherusd', 'ethereum');
+    </query>
+    <query>
+        ALTER TABLE `blockchain_external_address` ADD `status` TINYINT(1) NOT NULL AFTER `wallet_type`;
+    </query>
+</document>

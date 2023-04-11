@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'landingPageDefaultImage', 'https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/10-breathtaking-views-1-orig.jpg,https://s3-ap-southeast-1.amazonaws.com/com.nuxpay/landingpage/view.JPG', '', '', 'Landing Page Default Image', 'NuxPay');
+    </query>
+    <query>
+        CREATE TABLE `landing_page` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `reseller_id` bigint(20) NOT NULL,
+        `name` varchar(255) NOT NULL,
+        `short_code` varchar(255) NOT NULL,
+        `title` varchar(255) NOT NULL,
+        `subtitle` varchar(255) NOT NULL,
+        `description` text NOT NULL,
+        `image_url` varchar(255) NOT NULL,
+        `mobile` varchar(255) NOT NULL,
+        `email` varchar(255) NOT NULL,
+        `telegram` varchar(255) NOT NULL,
+        `whatsapp` varchar(255) NOT NULL,
+        `instagram` varchar(255) NOT NULL,
+        `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB  DEFAULT CHARSET=utf8
+    </query>
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'awsS3NuxPayBucket', 'com.nuxpay', '', '', 'NuxPay AWS S3 Bucket', 'NuxPay');
+    </query>
+    <query>
+        ALTER TABLE `landing_page` ADD INDEX `reseller_id` (`reseller_id`);
+    </query>
+    <query>
+        ALTER TABLE `landing_page` ADD INDEX `short_code` (`short_code`);
+    </query>
+</document>

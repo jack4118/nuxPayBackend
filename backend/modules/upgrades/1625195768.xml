@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+<!-- add buy sell crypto page -->
+    <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `site`, `created_at`, `updated_at`) VALUES (NULL, 'BuySell Crypto Listing', 'BuySell Crypto Listing', 'Menu', '0', 'buySellCrypto.php', '6', '', '', '0', 'Admin', NOW(), NOW());
+    </query>
+
+<!-- set role_permissions -->
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '3', (SELECT id FROM `permissions` where name = 'BuySell Crypto Listing'), '0', NOW(), NOW());
+    </query>
+
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '1', (SELECT id FROM `permissions` where name = 'BuySell Crypto Listing'), '0', NOW(), NOW());
+    </query>
+
+<!-- menu tuning order  -->
+    <query>
+        UPDATE `permissions` SET `priority` = '1' WHERE `permissions`.`id` = 90; <!--dashboard -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '2' WHERE `permissions`.`id` = 91; <!--merchant -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '3' WHERE `permissions`.`id` = 92; <!--fund in listing -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '4' WHERE `permissions`.`id` = 100; <!--fund out -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '5' WHERE `permissions`.`id` = 126; <!--withdrawalhistory -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '7' WHERE `permissions`.`id` = 99; <!--miner fee -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '8' WHERE `permissions`.`id` = 119; <!--reseller -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '9' WHERE `permissions`.`id` = 120; <!--agent listing -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '10' WHERE `permissions`.`id` = 93; <!--user management -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '11' WHERE `permissions`.`id` = 96; <!--account setting -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '12' WHERE `permissions`.`id` = 134; <!--campaign -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '13' WHERE `permissions`.`id` = 162; <!--utm tracking -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '14' WHERE `permissions`.`id` = 163; <!--export excel -->
+    </query>
+
+
+    <!-- sub menu tuning order -->
+    <query>
+        UPDATE `permissions` SET `priority` = '90' WHERE `permissions`.`id` = 128; <!-- reseller application listing -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '91' WHERE `permissions`.`id` = 130; <!-- reseller listing -->
+    </query>
+
+    <query>
+        UPDATE `permissions` SET `priority` = '90' WHERE `permissions`.`id` = 94; <!--user list -->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '91' WHERE `permissions`.`id` = 95; <!-- user role-->
+    </query>
+
+    <query>
+        UPDATE `permissions` SET `priority` = '90' WHERE `permissions`.`id` = 136; <!--create campagin-->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '91' WHERE `permissions`.`id` = 138; <!-- campaign list-->
+    </query>
+
+    <query>
+        UPDATE `permissions` SET `priority` = '94' WHERE `permissions`.`id` = 122; <!--register merchant-->
+    </query>
+    <query>
+        UPDATE `permissions` SET `priority` = '94' WHERE `permissions`.`id` = 123; <!-- merchant list-->
+    </query>
+
+</document>

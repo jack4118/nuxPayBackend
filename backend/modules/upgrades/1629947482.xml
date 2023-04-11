@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+	    ALTER TABLE `xun_coins` ADD `swap_provider_id` BIGINT(20) NOT NULL AFTER `is_exchange_miner`;
+    </query>
+</document>

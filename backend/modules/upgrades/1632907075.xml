@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<document type="TABLE">	
+
+    <!-- TUSD2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('usd2-trc20', '100', 'cryptocurrency', 'usd2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+    <!-- TMYR2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('myr2-trc20', '100', 'cryptocurrency', 'myr2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+    <!-- TSGD2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('sgd2-trc20', '100', 'cryptocurrency', 'sgd2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+    <!-- THKD2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('hkd2-trc20', '100', 'cryptocurrency', 'hkd2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+    <!-- TRMB2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('rmb2-trc20', '100', 'cryptocurrency', 'rmb2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+    <!-- TEUR2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('eur2-trc20', '100', 'cryptocurrency', 'eur2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>
+
+    <!-- TWON2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('won2-trc20', '100', 'cryptocurrency', 'won2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+    <!-- TYEN2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('yen2-trc20', '100', 'cryptocurrency', 'yen2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+    <!-- TTHB2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('thb2-trc20', '100', 'cryptocurrency', 'thb2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+    <!-- TPHP2 -->
+    <query>
+        INSERT INTO `xun_coins` 
+        (`currency_id`, `unit_conversion`, `type`, `pg_fee_wallet_type`, `is_show_new_coin`, `is_custom_coin`, `is_marketplace`, `is_gift_code_coin`, `is_payment_gateway`, `is_pay`, `is_story`, `is_auto_fund_out`, `is_buy_sell`, `is_default`, `is_exchange_miner`, `swap_provider_id`, `sequence`, `created_at`, `updated_at`) VALUES 
+        ('php2-trc20', '100', 'cryptocurrency', 'php2-trc20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NOW(), NOW());
+    </query>  
+
+</document>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_send_fund` ADD `sender_name` VARCHAR(255) NOT NULL AFTER `business_id`, ADD `sender_mobile_number` VARCHAR(255) NOT NULL AFTER `sender_name`, ADD `sender_email_address` VARCHAR(255) NOT NULL AFTER `sender_mobile_number`;
+    </query>
+  
+
+</document>

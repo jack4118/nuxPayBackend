@@ -1,0 +1,56 @@
+{
+  "name": "binance-websocket-examples",
+  "version": "1.0.0",
+  "description": "examples codes to demonstrate how to listen Binance Websocket Server",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "big.js": "^5.2.2",
+    "ramda": "^0.26.1",
+    "socket.io-client": "^3.0.5",
+    "ws": "^6.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "jest-watch-master": "^1.0.0",
+    "nodemon": "^1.18.3"
+  },
+  "scripts": {
+    "orderbook": "nodemon -w ./src --exec babel-node ./src/app.js",
+    "user": "nodemon -w ./src --exec babel-node ./src/user.js",
+    "margin-user": "nodemon -w ./src --exec babel-node ./src/margin-user.js",
+    "futures-user": "nodemon -w ./src --exec babel-node ./src/futures-user.js",
+    "delivery-futures-user": "nodemon -w ./src --exec babel-node ./src/delivery-futures-user.js",
+    "multi-stream": "nodemon -w ./src --exec babel-node ./src/multi-stream-depth.js",
+    "multi-stream-1m-kline": "nodemon -w ./src --exec babel-node ./src/multi-stream-1m-kline.js",
+    "multi-stream-5m-kline": "nodemon -w ./src --exec babel-node ./src/multi-stream-5m-kline.js",
+    "multi-stream-1h-kline": "nodemon -w ./src --exec babel-node ./src/multi-stream-1h-kline.js",
+    "multi-stream-1d-kline": "nodemon -w ./src --exec babel-node ./src/multi-stream-1d-kline.js",
+    "multi-stream-1w-kline": "nodemon -w ./src --exec babel-node ./src/multi-stream-1w-kline.js",
+    "multi-stream-1mt-kline": "nodemon -w ./src --exec babel-node ./src/multi-stream-1Mt-kline.js",
+    "multi-stream-ticker": "nodemon -w ./src --exec babel-node ./src/multi-stream-ticker.js",
+    "monitor-spot-depth": "nodemon -w ./src --exec babel-node ./src/spot/monitor-depth.js",
+    "monitor-spot-trade": "nodemon -w ./src --exec babel-node ./src/spot/monitor-trade.js",
+    "monitor-futures": "nodemon -w ./src --exec babel-node ./src/monitor-futures.js",
+    "start": "nodemon -w ./src --exec babel-node ./src/index.js",
+    "delivery": "nodemon -w ./src --exec babel-node ./src/delivery.js",
+    "build": "babel src -d dist",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "watchPlugins": [
+      "jest-watch-master"
+    ]
+  },
+  "author": "Liang Shi",
+  "license": "MIT"
+}

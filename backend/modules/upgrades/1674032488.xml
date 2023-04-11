@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `site` 
+        ADD COLUMN `otp_prefix` VARCHAR(100) NOT NULL
+        AFTER `company_name`;
+    </query>
+
+</document>

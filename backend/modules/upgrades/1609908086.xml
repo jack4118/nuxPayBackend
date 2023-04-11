@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_business_account` CHANGE `account_type` `account_type` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'premium';
+    </query>
+    <query>
+        UPDATE xun_business_account set account_type = 'premium';
+    </query>
+
+</document>

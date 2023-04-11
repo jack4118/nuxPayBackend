@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        alter table `xun_payment_gateway_invoice_transaction` add column `invoice_detail_id` bigint(20) NOT NULL after `gw_type`;
+    </query>
+</document>

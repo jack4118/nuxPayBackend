@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_web_services` ADD `http_code` VARCHAR(255) NOT NULL AFTER `status`;
+    </query>
+        
+</document>

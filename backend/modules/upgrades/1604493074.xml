@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+
+    <query>
+        UPDATE `permissions` SET `name` = 'Agent Listing' WHERE `file_path` LIKE 'distributorListing.php' AND `site` LIKE 'Reseller';
+    </query>
+    <query>
+        UPDATE `permissions` SET `name` = 'Agent Listing' WHERE `file_path` LIKE 'distributorListing.php' AND `site` LIKE 'Admin';
+    </query>
+    <query>
+        UPDATE `permissions` SET `parent_id` = (SELECT `id` FROM (SELECT * FROM `permissions`) AS `temp_permissions` WHERE `file_path` = 'resellerListing.php' AND `site` = 'Reseller' AND `name` = 'Reseller Listing') WHERE `file_path` = 'createReseller.php';
+    </query>
+</document>

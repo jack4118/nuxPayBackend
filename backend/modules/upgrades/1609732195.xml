@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_swap_history` ADD `from_tx_id` VARCHAR( 255 ) NOT NULL AFTER `status` ,
+ADD `to_tx_id` VARCHAR( 255 ) NOT NULL AFTER `from_tx_id`;
+    </query>
+    <query>
+      ALTER TABLE `xun_swap_history` ADD INDEX `from_tx_id` ( `from_tx_id` );
+    </query>
+    <query>
+      ALTER TABLE `xun_swap_history` ADD INDEX `to_tx_id` ( `to_tx_id` );
+    </query>
+</document>

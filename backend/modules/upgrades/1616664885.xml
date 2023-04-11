@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_wallet_transaction` ADD `bc_reference_id` BIGINT(20) NOT NULL AFTER `batch_id`, ADD INDEX `bc_reference_id` (`bc_reference_id`);
+    </query>
+</document>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `xun_user_payments_summary` ( 
+            `id`                    BIGINT(20) NOT NULL AUTO_INCREMENT , 
+            `date`                  DATE NOT NULL,
+            `user_id`               BIGINT(20) NOT NULL,
+            `wallet_type`           VARCHAR(255) NOT NULL,
+            `transaction_count`     BIGINT(20) NOT NULL,
+            `gross_profit`          DECIMAL(65,18) NOT NULL,
+            `gross_profit_usd`      DECIMAL(65,6) NOT NULL,
+            `net_profit`            DECIMAL(65,18) NOT NULL,
+            `net_profit_usd`        DECIMAL(65,6) NOT NULL,
+            `created_at`            DATETIME NOT NULL, 
+
+            PRIMARY KEY (`id`), 
+            INDEX `date` (`date`), 
+            INDEX `user_id` (`user_id`), 
+            INDEX `wallet_type` (`wallet_type`), 
+            INDEX `transaction_count` (`transaction_count`),
+            INDEX `gross_profit` (`gross_profit`),
+            INDEX `gross_profit_usd` (`gross_profit_usd`),
+            INDEX `net_profit` (`net_profit`),
+            INDEX `net_profit_usd` (`net_profit_usd`)
+        ) ENGINE = InnoDB;
+    </query>
+</document>

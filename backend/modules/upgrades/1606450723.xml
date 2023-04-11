@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    
+    <!--  xun_crypto_history table, miner_fee_exchange_rate  -->
+    <query>
+        ALTER TABLE `xun_crypto_history` 
+        ADD COLUMN `miner_fee_exchange_rate` decimal(20,8) NOT NULL AFTER `miner_fee_wallet_type`;
+    </query>    
+
+</document>

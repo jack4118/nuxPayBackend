@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_details` ADD `fund_out_transaction_id` VARCHAR(255) NOT NULL AFTER `status`, ADD INDEX `fund_out_transaction_id` (`fund_out_transaction_id`);
+    </query>
+     <query> 
+        ALTER TABLE `xun_payment_details` ADD `tx_exchange_rate` DECIMAL(20,8) NOT NULL AFTER `actual_fee_wallet_type`; 
+    </query>
+     <query>
+        ALTER TABLE `xun_payment_details` ADD `fiat_currency_id` VARCHAR(255) NOT NULL AFTER `tx_exchange_rate`;
+    </query>
+</document>

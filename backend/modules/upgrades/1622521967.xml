@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE xun_payment_gateway_fund_in SET transaction_target = LOWER(transaction_target)
+    </query>
+</document>

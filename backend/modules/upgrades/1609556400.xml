@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    
+    <!--  xun_payment_gateway_send_fund  -->
+    <query>
+        ALTER TABLE `xun_payment_gateway_send_fund` 
+        ADD COLUMN `escrow` TINYINT(1) NOT NULL AFTER `redeemed_at`;
+    </query>    
+
+</document>

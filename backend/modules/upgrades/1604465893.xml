@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `site`, `created_at`, `updated_at`) VALUES (NULL, 'Create Merchant', 'Create Merchant', 'Page', (SELECT `id` FROM (SELECT * FROM `permissions`) AS `temp_permissions` WHERE `file_path` = 'merchantListing.php' AND `site` = 'Reseller') , 'createUser.php', '1', '', '', '0', 'Reseller', NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '6', (SELECT `id` FROM `permissions` WHERE `file_path` = 'createUser.php' AND `site` = 'Reseller'), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '7', (SELECT `id` FROM `permissions` WHERE `file_path` = 'createUser.php' AND `site` = 'Reseller'), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '8', (SELECT `id` FROM `permissions` WHERE `file_path` = 'createUser.php' AND `site` = 'Reseller'), '0', CURRENT_TIME(), CURRENT_TIME())
+    </query>
+</document>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+<!-- add buy sell crypto page -->
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`,  `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'markupPercentage', '10', '', (SELECT `id` FROM provider WHERE `name` ='simplex'), NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`,  `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'markupPercentage', '10', '', (SELECT `id` FROM provider WHERE `name` ='xanpool'), NOW(), NOW());
+    </query>
+    <query>
+        UPDATE `provider_setting` SET `value` = '0.003' WHERE `provider_setting`.`provider_id` = (SELECT `id` FROM provider WHERE `name` ='xanpool') AND `name` = 'minCryptoAmount' AND `type` = 'BTC' ; 
+    </query>
+
+</document>

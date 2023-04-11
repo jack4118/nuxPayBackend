@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_service_charge_audit` ADD `fund_out_table` VARCHAR(255) NOT NULL AFTER `wallet_transaction_id`, ADD `fund_out_id` BIGINT(20) NOT NULL AFTER `fund_out_table`, ADD INDEX `fund_out_table` (`fund_out_table`), ADD INDEX `fund_out_id` (`fund_out_id`);
+    </query>
+    <query>
+        ALTER TABLE `xun_service_charge_audit` ADD `service_charge_transaction_hash` VARCHAR(255) NOT NULL AFTER `transaction_hash`, ADD INDEX `service_charge_transaction_hash` (`service_charge_transaction_hash`);
+    </query>
+    <query>
+        ALTER TABLE `xun_wallet_transaction` ADD `transaction_history_table` VARCHAR(255) NOT NULL AFTER `batch_id`, ADD `transaction_history_id` BIGINT(20) NOT NULL AFTER `transaction_history_table`, ADD INDEX `transaction_history_table` (`transaction_history_table`), ADD INDEX `transaction_history_id` (`transaction_history_id`);
+    </query>
+</document>

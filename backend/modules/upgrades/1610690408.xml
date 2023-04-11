@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `xun_buysell_order` (
+ `id` bigint(20) NOT NULL AUTO_INCREMENT,
+ `business_id` bigint(20) NOT NULL,
+ `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+ `type` varchar(255) NOT NULL,
+ `disabled` tinyint(1) NOT NULL,
+ `expire_at` datetime NOT NULL,
+ `updated_at` datetime NOT NULL,
+ `created_at` datetime NOT NULL,
+ PRIMARY KEY (`id`),
+ KEY `business_id` (`business_id`),
+ KEY `type` (`type`),
+ KEY `disabled` (`disabled`),
+ KEY `expire_at` (`expire_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    </query>
+    
+    <query>
+    	CREATE TABLE `xun_buysell_wallettype` (
+ `id` bigint(20) NOT NULL AUTO_INCREMENT,
+ `order_id` bigint(20) NOT NULL,
+ `wallet_type` varchar(255) NOT NULL,
+ `created_at` datetime NOT NULL,
+ PRIMARY KEY (`id`),
+ KEY `order_id` (`order_id`),
+ KEY `wallet_type` (`wallet_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    </query>
+    
+    <query>
+    	CREATE TABLE `xun_buysell_contactinfo` (
+ `id` bigint(20) NOT NULL AUTO_INCREMENT,
+ `order_id` bigint(20) NOT NULL,
+ `type` varchar(255) NOT NULL,
+ `detail` text NOT NULL, 
+ `created_at` datetime NOT NULL,
+ PRIMARY KEY (`id`),
+ KEY `order_id` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    </query>
+        
+</document>

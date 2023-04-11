@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_details` ADD `transaction_token` VARCHAR(255) NOT NULL AFTER `status`, ADD INDEX `transaction_token` (`transaction_token`); 
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_transaction` ADD `wallet_type` VARCHAR(255) NOT NULL AFTER `crypto_amount`;
+    </query>
+</document>

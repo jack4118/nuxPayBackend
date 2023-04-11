@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'minerFeeDelegateWalletAddress', '0x2ccf2f8a091598b70c107c6ca54615555fbbd4b8', '', '', 'Centralized Miner Fee Delegate Wallet Address', 'NuxPay');
+    </query>
+    <query>
+        CREATE TABLE `xun_payment_gateway_fund_in` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `transaction_id` varchar(255) NOT NULL,
+        `reference_id` varchar(255) NOT NULL,
+        `business_id` bigint(20) NOT NULL,
+        `sender_address` varchar(255) NOT NULL,
+        `receiver_address` varchar(255) NOT NULL,
+        `amount` varchar(255) NOT NULL,
+        `amount_receive` varchar(255) NOT NULL,
+        `transaction_fee` varchar(255) NOT NULL,
+        `miner_fee` varchar(255) NOT NULL,
+        `wallet_type` varchar(255) NOT NULL,
+        `exchange_rate` varchar(255) NOT NULL,
+        `miner_fee_wallet_type` varchar(255) NOT NULL,
+        `miner_fee_exchange_rate` varchar(255) NOT NULL,
+        `transaction_type` varchar(255) NOT NULL,
+        `created_at` datetime NOT NULL,
+        PRIMARY KEY (`id`),
+        KEY `reference_id` (`reference_id`),
+        KEY `business_id` (`business_id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+</document>

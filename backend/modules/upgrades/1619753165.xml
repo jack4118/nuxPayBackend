@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'dailyLimit', '20000', '', (SELECT id FROM provider where company = 'Simplex'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'monthlyLimit', '50000', '', (SELECT id FROM provider where company = 'Simplex'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxDailyTransaction', '3', '', (SELECT id FROM provider where name = 'xanpool'), NOW(), NOW());
+    </query>
+</document>

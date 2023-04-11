@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+	<query>
+		ALTER TABLE `xun_payment_gateway_invoice_detail` CHANGE `payment_description` `payment_description` VARCHAR(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '';
+	</query>
+</document>

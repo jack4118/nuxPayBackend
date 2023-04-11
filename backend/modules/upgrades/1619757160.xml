@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_crypto_payment_transaction` ADD `fee_amount` DECIMAL(20,8) NOT NULL AFTER `payment_currency`, ADD `fee_currency` VARCHAR(255) NOT NULL AFTER `fee_amount`;
+    </query>
+</document>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE xun_crypto_payment_transaction ADD transaction_transfer_id BIGINT(20) NOT NULL AFTER destination_address
+    </query>
+</document>

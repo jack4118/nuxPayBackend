@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        SELECT @provider_id := `id` FROM `provider` WHERE `company` = 'Simplex';
+    </query>
+
+    <query>
+        INSERT INTO `provider_setting` (`name`,`value`,`provider_id`,`created_at`,`updated_at`) VALUES ('defaultCurrency', 'USD', @provider_id,NOW(),NOW());
+    </query>
+    <query>
+        SELECT @provider_id := `id` FROM `provider` WHERE `company` = 'Xanpool';
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`,`value`,`provider_id`,`created_at`,`updated_at`) VALUES ('defaultCurrency', 'SGD', @provider_id,NOW(),NOW());
+    </query>
+</document>

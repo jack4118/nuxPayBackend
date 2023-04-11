@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `xun_swap_setting` (`id`, `from_wallet_type`, `from_symbol`, `to_wallet_type`, `to_symbol`, `common_symbol`, `method`, `margin_percentage`, `disabled`) VALUES (NULL, 'filecoin', 'FIL', 'tetherusd', 'USDT', 'FILUSDT', 'buy', '5.0', ''), (NULL, 'tetherusd', 'USDT', 'filecoin', 'FIL', 'FILUSDT', 'sell', '5.0', '');
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minPrice', '0.01000000', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW()), (NULL, 'maxPrice', '10000.00000000', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'priceTickSize', '0.00001000', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minQty', '0.10000000', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxQty', '9000000.00000000', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'lotStepSize', '0.10000000', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW())
+    </query>
+     <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxOrders', '200', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW())
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minSwapFIL', '0.5', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW())
+    </query>
+     <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minSwapUSDT', '20', 'FILUSDT', (SELECT id FROM provider where name = 'binance'), NOW(), NOW())
+    </query>
+</document>

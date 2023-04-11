@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `reseller` ADD `referral_code` VARCHAR(255) NOT NULL AFTER `source`;
+    </query>
+    <query>
+        ALTER TABLE `reseller` ADD INDEX `referral_code` (`referral_code`);
+    </query>
+</document>

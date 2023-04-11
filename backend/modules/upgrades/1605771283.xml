@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `site`, `created_at`, `updated_at`) VALUES (NULL, 'Landing Page Listing', 'Landing Page Listing', 'Sub Menu', (SELECT `id` FROM (SELECT * FROM `permissions`) AS permissions2 WHERE `name` = 'Landing Page' AND `site` = 'Reseller'), 'landingPageListing.php', '2', '', '', '0', 'Reseller', CURRENT_TIME(), CURRENT_TIME());
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '6', (SELECT `id` FROM `permissions` WHERE `file_path` = 'landingPageListing.php' AND `site` = 'Reseller'), '0', CURRENT_TIME(), CURRENT_TIME());
+    </query>
+</document>

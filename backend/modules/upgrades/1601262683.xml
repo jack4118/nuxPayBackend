@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+	<query>
+		UPDATE `permissions` SET name = 'Fund In Listing' where name = 'Transaction History';
+	</query>
+</document>

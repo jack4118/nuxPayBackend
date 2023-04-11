@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+	<query>
+		UPDATE `permissions` SET `parent_id` =(SELECT `id` FROM (SELECT `id` FROM `permissions` WHERE `name` = "Merchant" AND `site` = "Admin") AS `id`) WHERE `id` IN (SELECT `id` FROM (SELECT `id` FROM `permissions` WHERE `name` = "Create Nuxpay User" AND `site` = "Admin") AS `id`);
+	</query>
+    <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, `type`, `parent_id`, `file_path`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `site`, `created_at`, `updated_at`) VALUES (NULL, 'Merchant Listing', 'Merchant Listing', 'Sub Menu', '91', 'merchantListing.php', '1', '', '', '0', 'Admin', NOW(), NOW());
+    </query>
+    <query>
+         INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES(NULL ,'3' ,(SELECT id FROM permissions where name = 'Merchant Listing' limit 1) , '0' , NOW() , NOW());
+    </query>
+</document>

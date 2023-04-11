@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    
+    <!--  xun_crypto_history table, miner_fee_exchange_rate  -->
+    <query>
+        ALTER TABLE `xun_crypto_history` 
+        ADD COLUMN `service_charge_transaction_id` VARCHAR(255) NOT NULL AFTER `transaction_id`;
+    </query>
+
+    <!-- xun_crypto_history, add index service_charge_transaction_id -->
+    <query>
+    	ALTER TABLE `xun_crypto_history` 
+        ADD INDEX `service_charge_transaction_id` (`service_charge_transaction_id`);
+    </query>
+
+</document>

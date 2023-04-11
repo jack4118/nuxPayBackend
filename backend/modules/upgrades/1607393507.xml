@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD `deleted` TINYINT(1) NOT NULL AFTER `transaction_hash`;
+    </query>
+     <query>
+        ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD INDEX `deleted` (`deleted`);
+     </query>
+     <query>
+        ALTER TABLE `xun_crypto_transaction_hash` ADD `exchange_rate` DECIMAL(20,8) NOT NULL AFTER `transaction_token`;
+     </query>
+</document>

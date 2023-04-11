@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_user_verification` ADD `source` VARCHAR(255) NOT NULL AFTER `is_valid`;
+    </query>
+</document>

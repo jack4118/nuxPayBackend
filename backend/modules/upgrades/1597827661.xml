@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+       ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD `transaction_type` VARCHAR(255) NOT NULL AFTER `miner_fee_wallet_type`;
+    </query>
+</document>

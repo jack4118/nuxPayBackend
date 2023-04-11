@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_withdrawal` ADD `actual_miner_fee` DECIMAL(20,18) NOT NULL AFTER `wallet_type`, ADD `actual_miner_fee_wallet_type` VARCHAR(255) NOT NULL AFTER `actual_miner_fee`;
+    </query>
+</document>

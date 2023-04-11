@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+	    INSERT INTO `message_code` ( `code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) VALUES ('10036', 'Swap Provider Error', 'Subject : %%subject%% \nError Message : %%errorMessage%% \nWallet Type : %%walletType%%', 'Please input the right swap provider id in xun_coins table', 'SMS', '0', NOW());
+    </query>
+</document>

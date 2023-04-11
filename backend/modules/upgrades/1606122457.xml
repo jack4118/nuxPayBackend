@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_coins` ADD `is_default` TINYINT(1) NOT NULL AFTER `is_auto_fund_out`;
+    </query>
+    <query>
+        UPDATE `xun_coins` SET `is_default` = '1' WHERE `xun_coins`.`currency_id` IN ('bitcoin', 'tetherusd', 'ethereum');
+    </query>
+</document>

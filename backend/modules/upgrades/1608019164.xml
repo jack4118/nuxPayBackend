@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `site` (`id`, `source`, `company_name`, `company_address`, `support_email`, `domain`, `reseller_website`, `short_url`, `image_url_path`, `theme_color`, `deleted`, `created_at`) VALUES (NULL, 'FTAG', 'FTAG', '2A Hoot Kiam Road Singapore 249391 ', 'pay.ftag@gmail.com', 'https://pay.ftag.com', 'https://admin.ftag.com', 'https://pay.ftag.com', 'https://pay.ftag.com/images/ftag/', '#38a8f9', '', NOW());
+    </query>
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type`, `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `url2`, `remark`, `currency`, `balance`, `created_at`, `updated_at`) VALUES (NULL, 'FTAG', 'noreply_mail', 'pay.ftag@gmail.com', 'qwer1234$$$', '', 'notification', '', '', '', '', '', '', '', '', '', NOW(), NOW());
+    </query>
+</document>

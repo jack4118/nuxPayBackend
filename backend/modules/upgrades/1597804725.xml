@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'requestFundConsolidateWalletAddress', '0x5b9bffb2653b0079637707b11cccacfd37b61ff9', '', '', 'TheNux Request Fund Consolidate Wallet Address', 'TheNux');
+    </query>
+    <query>
+        CREATE TABLE `xun_payment_gateway_invoice_transaction` (
+    	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+       	`sender_address` varchar(255) NOT NULL,
+        `recipient_address` varchar(255) NOT NULL,
+        `amount` decimal(20,8) NOT NULL,
+        `wallet_type` varchar(255) NOT NULL,
+        `credit` decimal(20,8) NOT NULL,
+        `debit` decimal(20,8) NOT NULL,
+        `balance` decimal(20,8) NOT NULL,
+        `miner_fee_amount` decimal(20,18) NOT NULL,
+        `miner_fee_wallet_type` varchar(255) NOT NULL,
+        `reference_id` bigint(20) NOT NULL,
+        `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD `business_id` BIGINT(20) NOT NULL AFTER `id`, ADD INDEX `business_id` (`business_id`);
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD INDEX `wallet_type` (`wallet_type`);
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD `amount_satoshi` BIGINT(30) NOT NULL AFTER `amount`;
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_invoice_transaction` ADD `miner_fee_satoshi` BIGINT(30) NOT NULL AFTER `miner_fee_amount`;
+    </query>
+
+</document>

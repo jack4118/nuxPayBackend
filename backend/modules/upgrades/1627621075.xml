@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `xun_marketplace_currencies`(`name`, `type`, `symbol`, `display_symbol`, `currency_id`, `unit_conversion`, `image`, `status`, `image_md5`, `created_at`, `updated_at`) VALUES ('Livepeer', 'cryptocurrency', 'lpt', 'lpt', 'livepeer', '1000000000000000000', 'https://assets.coingecko.com/coins/images/7137/large/livepeer.png?1547976208', 1, 'livepeer001', NOW(), NOW() );
+    </query>
+
+    <query>
+        INSERT INTO `xun_coins` (`currency_id`,`unit_conversion`,`type`,`pg_fee_wallet_type`,`is_show_new_coin`,`is_custom_coin`,`is_marketplace`,`is_gift_code_coin`,`is_payment_gateway`,`is_pay`,`is_story`,`is_auto_fund_out`,`is_buy_sell`,`is_default`,`is_exchange_miner`,`sequence`,`created_at`,`updated_at`) VALUES ('livepeer', '1000000000000000000', 'cryptocurrency', 'livepeer',0,0,0,0,1,1,1,0,0,1,0,0,NOW(),NOW());
+    </query>
+
+</document>

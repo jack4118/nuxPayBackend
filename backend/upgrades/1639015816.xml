@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <!-- Update supported currency for xanpool to add trx-usdt -->
+    <query>        
+    	INSERT INTO `xun_marketplace_currencies` 
+            (`id`, `name`, `type`, `symbol`, `display_symbol`, `currency_id`, `fiat_currency_id`, `fiat_currency_reference_price`, `unit_conversion`, `total_supply`, `image`, `is_show_new_coin`, `status`, `image_md5`, `bg_image_url`, `bg_image_md5`, `font_color`, `created_at`, `updated_at`)
+        VALUES 
+            (NULL, 'isUSDT', 'cryptocurrency', 'usdt', 'USDT(TRC20)', 'tetherusd', '', '0.00000000', '1000000', '0', 'https://s3-ap-southeast-1.amazonaws.com/com.thenux.image/assets/xchange/currency/cryptocurrency/tetherusd.png', '0', '1', '', '', '', '', NOW(), NOW()) 
+    </query>
+</document>

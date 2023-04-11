@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'minAmount', '50', 'TRX-USDT', (SELECT id FROM provider WHERE name = "simplex"), NOW(), NOW());
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'maxAmount', '20000', 'TRX-USDT', (SELECT id FROM provider WHERE name = "simplex"), NOW(), NOW());
+    </query>
+</document>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_marketer_commission_transaction` ADD `reseller_id` BIGINT(20) NOT NULL AFTER `business_marketer_commission_id`;
+    </query>
+    <query>
+        ALTER TABLE `xun_marketer_commission_transaction` ADD INDEX `reseller_id` (`reseller_id`);
+    </query>
+</document>

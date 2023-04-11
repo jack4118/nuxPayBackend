@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `xun_payment_gateway_fund_in` ADD `type` VARCHAR(255) NOT NULL AFTER `miner_fee_exchange_rate`;
+    </query>
+     <query>
+        ALTER TABLE `xun_payment_gateway_fund_in` ADD INDEX `type` (`type`);
+    </query>
+     <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'compensateFeeAmount', '10', '', '', 'Company Compensate Fee Amount(USD)', 'NuxPay');
+    </query>
+     <query>
+        UPDATE xun_payment_gateway_fund_in set type = 'fund_in';
+    </query>
+    <query>
+        ALTER TABLE `xun_payment_gateway_fund_in` ADD INDEX `reference_id` (`reference_id`);
+    </query>
+</document>
